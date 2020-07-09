@@ -1,10 +1,12 @@
 import React from 'react';
-import { Button } from '@material-ui/core';
+import TemporaryDrawer  from './components/navbars/TemporaryDrawer';
+import TopNav from './components/navbars/TopNav';
 
 function App() {
   return (
     <div className="App">
-        <Button variant='outlined' color='secondary'>My First Button</Button>
+      < TemporaryDrawer />
+      <TopNav />
     </div>
   );
 }

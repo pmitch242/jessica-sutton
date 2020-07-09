@@ -1,7 +1,8 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core/styles';
-import { AppBar, Toolbar, IconButton, Button, Typography } from '@material-ui/core'
+import { AppBar, Toolbar, IconButton, Button, Typography, Hidden } from '@material-ui/core'
 import MenuIcon from '@material-ui/icons/Menu';
+import { NavLink } from 'react-router-dom';
 
 const TopNav = () => {
 
@@ -12,6 +13,15 @@ const TopNav = () => {
         title: {
             flexGrow: 1,
         },
+        link: {
+            textDecoration: 'none',
+            color: 'inherit'
+        },
+        contactInfo: {
+            margin: '10px 0px 10px 15px',
+            paddingLeft: '20px',
+            borderLeft: '2px solid #ffffff'
+        }
     }));
 
     const classes = useStyles();
@@ -21,13 +31,34 @@ const TopNav = () => {
             <div className={classes.root}>
                 <AppBar position="static">
                     <Toolbar>
-                        <IconButton edge={false} className={classes.menuButton} color="inherit" aria-label="menu">
-                            <MenuIcon />
-                        </IconButton>
                         <Typography variant="h6" className={classes.title}>
-                            JenniferSutton
+                            <NavLink to='/' className={classes.link}>
+                                JenniferSutton
+                            </NavLink>
                         </Typography>
-                        <Button color="inherit">Login</Button>
+
+                        <Hidden smDown>
+                            <Button><NavLink to='/about' className={classes.link}>About</NavLink></Button>
+                            <Button><NavLink to='/services' className={classes.link}>Services</NavLink></Button>
+                            <Button><NavLink to='/contact' className={classes.link}>Contact</NavLink></Button>
+
+                            <div className={`nav-contact-info flex ${classes.contactInfo}`}>
+                            <span>Sutton LLC, P.O. Box 12189,</span>
+                            <span>Baltimore, MD 21281</span>
+                            <span>208-503-9381</span>
+                        </div>
+                        </Hidden>
+
+                        <Hidden mdUp>
+                            <IconButton
+                                // edge='start'
+                                className={classes.menuButton}
+                                color="inherit"
+                                aria-label="menu"
+                            >
+                                <MenuIcon />
+                            </IconButton>
+                        </Hidden>
                     </Toolbar>
                 </AppBar>
             </div>

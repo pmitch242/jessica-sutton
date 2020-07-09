@@ -25,7 +25,7 @@ const TopNav = () => {
                             <MenuIcon />
                         </IconButton>
                         <Typography variant="h6" className={classes.title}>
-                            Jennifer Sutton
+                            JenniferSutton
                         </Typography>
                         <Button color="inherit">Login</Button>
                     </Toolbar>

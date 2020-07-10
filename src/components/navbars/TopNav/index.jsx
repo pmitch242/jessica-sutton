@@ -43,9 +43,8 @@ const TopNav = () => {
                             <Button><NavLink to='/contact' className={classes.link}>Contact</NavLink></Button>
 
                             <div className={`nav-contact-info flex ${classes.contactInfo}`}>
-                            <span>Sutton LLC, P.O. Box 12189,</span>
-                            <span>Baltimore, MD 21281</span>
-                            <span>208-503-9381</span>
+                            <span>Email: jess.el.sutton@gmail.com</span>
+                            <span>Phone: 208-503-9381</span>
                         </div>
                         </Hidden>
 

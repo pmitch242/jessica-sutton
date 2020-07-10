@@ -4,14 +4,14 @@ import { AppBar, Toolbar, IconButton, Button, Typography, Hidden } from '@materi
 import MenuIcon from '@material-ui/icons/Menu';
 import { NavLink } from 'react-router-dom';
 
+import TemporaryDrawer from './TemporaryDrawer'
+
 const TopNav = () => {
     const theme = useTheme();
-    console.log(theme);
+    console.log(theme.palette);
 
+    // styles
     const useStyles = makeStyles((theme) => ({
-        menuButton: {
-            marginRight: theme.spacing(2),
-        },
         title: {
             flexGrow: 1,
         },
@@ -23,6 +23,9 @@ const TopNav = () => {
             margin: '10px 0px 10px 15px',
             paddingLeft: '20px',
             borderLeft: '2px solid #ffffff'
+        },
+        menuButton: {
+            color: theme.palette.custom.musturd
         }
     }));
 
@@ -52,7 +55,7 @@ const TopNav = () => {
 
                         <Hidden mdUp>
                             <IconButton
-                                // edge='start'
+                                edge='end'
                                 className={classes.menuButton}
                                 color="inherit"
                                 aria-label="menu"
@@ -62,6 +65,8 @@ const TopNav = () => {
                         </Hidden>
                     </Toolbar>
                 </AppBar>
+
+                <TemporaryDrawer />
             </div>
         </div>
     )

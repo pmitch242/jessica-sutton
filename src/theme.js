@@ -9,12 +9,12 @@ const theme = createMuiTheme({
     secondary: {
       main: '#4b88a2', //coral blue
     },
-    text: {
-      secondary:'4b88a2'
-    },
-    hightlights: {
-      primary: '#d8973c',
-      secondary: '#4b88a2',
+    custom: {
+      white:'#f9f9f9',
+      gray: '#e9e9e9',
+      darkBlue:'#001639',
+      musturd: '#d8973c',
+      lightBlue: '#4b88a2',
     }
   },
 });

@@ -1,10 +1,12 @@
 import React from 'react'
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles, useTheme } from '@material-ui/core/styles';
 import { AppBar, Toolbar, IconButton, Button, Typography, Hidden } from '@material-ui/core'
 import MenuIcon from '@material-ui/icons/Menu';
 import { NavLink } from 'react-router-dom';
 
 const TopNav = () => {
+    const theme = useTheme();
+    console.log(theme);
 
     const useStyles = makeStyles((theme) => ({
         menuButton: {
@@ -29,9 +31,9 @@ const TopNav = () => {
     return (
         <div>
             <div className={classes.root}>
-                <AppBar position="static">
+                <AppBar color='transparent' position="static">
                     <Toolbar>
-                        <Typography variant="h6" className={classes.title}>
+                        <Typography variant="h5" className={classes.title}>
                             <NavLink to='/' className={classes.link}>
                                 JenniferSutton
                             </NavLink>

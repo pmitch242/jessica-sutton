@@ -4,7 +4,7 @@ import { ThemeProvider } from '@material-ui/core/styles';
 
 import theme from './theme';
 
-import TopNav from './components/navbars/TopNav';
+import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Contact from './components/Contact';
 import NotFound from './components/NotFound';
@@ -16,7 +16,7 @@ function App() {
     <div className="App">
       <Router>
         <ThemeProvider theme={theme}>
-          <TopNav />
+          <Navbar />
 
           <Switch>
             <Route exact path='/' component={Home} />

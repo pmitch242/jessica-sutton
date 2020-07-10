@@ -1,5 +1,5 @@
-import React from 'react'
-import { makeStyles, useTheme } from '@material-ui/core/styles';
+import React, { useState } from 'react'
+import { makeStyles } from '@material-ui/core/styles';
 import { AppBar, Toolbar, IconButton, Button, Typography, Hidden } from '@material-ui/core'
 import MenuIcon from '@material-ui/icons/Menu';
 import { NavLink } from 'react-router-dom';
@@ -7,8 +7,8 @@ import { NavLink } from 'react-router-dom';
 import TemporaryDrawer from './TemporaryDrawer'
 
 const TopNav = () => {
-    const theme = useTheme();
-    console.log(theme.palette);
+    const [open, setOpen] = useState(false)
+    // const theme = useTheme();
 
     // styles
     const useStyles = makeStyles((theme) => ({
@@ -30,6 +30,10 @@ const TopNav = () => {
     }));
 
     const classes = useStyles();
+
+    const toggleDrawer = () => {
+        open ? setOpen(false) : setOpen(true)
+    }
 
     return (
         <div>
@@ -55,10 +59,10 @@ const TopNav = () => {
 
                         <Hidden mdUp>
                             <IconButton
-                                edge='end'
                                 className={classes.menuButton}
                                 color="inherit"
                                 aria-label="menu"
+                                onClick={() => setOpen(true)}
                             >
                                 <MenuIcon />
                             </IconButton>
@@ -66,7 +70,10 @@ const TopNav = () => {
                     </Toolbar>
                 </AppBar>
 
-                <TemporaryDrawer />
+                <TemporaryDrawer
+                    open={open}
+                    close={() => setOpen(false)}
+                />
             </div>
         </div>
     )

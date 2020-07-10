@@ -2,75 +2,63 @@ import React from 'react';
 import clsx from 'clsx';
 import { makeStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
-import Button from '@material-ui/core/Button';
+import { InfoOutlined, ChatBubbleOutline, AccountBalanceOutlined } from '@material-ui/icons';
 import List from '@material-ui/core/List';
 import Divider from '@material-ui/core/Divider';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
+import { ListItemIcon } from '@material-ui/core';
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
+  root: {
+    width: '65vw',
+    height: '100%',
+    backgroundColor: theme.palette.custom.gray
+  },
   list: {
     width: 250,
   },
   fullList: {
     width: 'auto',
   },
-});
+}));
 
-export default function TemporaryDrawer() {
+const menuItems = [
+  {
+    icon: <InfoOutlined/>,
+    text: 'About'
+  },
+  {
+    icon: <AccountBalanceOutlined/>,
+    text: 'Services'
+  },
+  {
+    icon: <ChatBubbleOutline/>,
+    text: 'Contact'
+  },
+]
+
+export default function TemporaryDrawer({ open, close }) {
   const classes = useStyles();
-  const [state, setState] = React.useState({
-    top: false,
-    left: false,
-    bottom: false,
-    right: false,
-  });
-
-  const toggleDrawer = (anchor, open) => (event) => {
-    if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
-      return;
-    }
-
-    setState({ ...state, [anchor]: open });
-  };
-
-  const list = (anchor) => (
-    <div
-      className={clsx(classes.list, {
-        [classes.fullList]: anchor === 'top' || anchor === 'bottom',
-      })}
-      role="presentation"
-      onClick={toggleDrawer(anchor, false)}
-      onKeyDown={toggleDrawer(anchor, false)}
-    >
-      <List>
-        {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-          <ListItem button key={text}>
-            <ListItemText primary={text} />
-          </ListItem>
-        ))}
-      </List>
-      <Divider />
-      <List>
-        {['All mail', 'Trash', 'Spam'].map((text, index) => (
-          <ListItem button key={text}>
-            <ListItemText primary={text} />
-          </ListItem>
-        ))}
-      </List>
-    </div>
-  );
 
   return (
-    <div>
-      {['left', 'right', 'top', 'bottom'].map((anchor) => (
-        <React.Fragment key={anchor}>
-          <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button>
-          <Drawer anchor={anchor} open={state[anchor]} onClose={toggleDrawer(anchor, false)}>
-            {list(anchor)}
-          </Drawer>
-        </React.Fragment>
-      ))}
-    </div>
+    <React.Fragment>
+      <Drawer
+        anchor='right'
+        open={open}
+        onClose={close}
+      >
+        <div className={classes.root}>
+          <List>
+              {menuItems.map((item) => (
+                <ListItem key='item.text' button>
+                  <ListItemIcon>{item.icon}</ListItemIcon>
+                  <ListItemText primary={item.text} />
+                </ListItem>
+              ))}
+          </List>
+          </div>
+      </Drawer>
+    </React.Fragment>
   );
 }

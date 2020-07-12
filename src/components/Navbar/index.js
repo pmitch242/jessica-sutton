@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom';
-import { Typography, Hidden, IconButton, Drawer, ListItem, List, ListItemText, makeStyles, Divider, Collapse } from '@material-ui/core';
+import { Typography, Hidden, IconButton, Drawer, ListItem, List, ListItemText, makeStyles, Divider, Collapse, Box } from '@material-ui/core';
 
 import MenuIcon from '@material-ui/icons/Menu';
 import CloseIcon from '@material-ui/icons/Close';
@@ -56,7 +56,7 @@ const Navbar = () => {
 
     return (
 
-        <div className='navbar' >
+        <Box fontFamily='fontFamily' className='navbar' >
             <div className='logo'>
                 <Typography varient='h2'>JessicaSutton</Typography>
             </div>
@@ -131,7 +131,7 @@ const Navbar = () => {
                     </List>
                 </div>
             </Drawer>
-        </div>
+        </Box>
 
     )
 }

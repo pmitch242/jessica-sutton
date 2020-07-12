@@ -3,12 +3,28 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: #e9e9e9;
 }
 
 .navbar .navlinks a{
-    color: inherit;
+    color: #e9e9e9;
     text-decoration: none;
     margin-right: 20px;
+    padding: 10px;
+}
+
+.navbar .navlinks a:hover{
+    color: #d8973c;
+}
+
+.navbar .navlinks a.active{
+    /* color: #d8973c; */
+    border-bottom: #d8973c 2px solid;
+}
+
+.navbar .navlinks a.active:hover{
+    color: #e9e9e9;
+    cursor: default;
 }
 
 .navbar .navlinks a:last-of-type{
@@ -18,7 +34,14 @@
 .navbar .nav-contact{
     display: flex;
     flex-direction: column;
+    align-content: center;
 }
+
+.navbar .nav-contact span{
+    display: flex;
+    align-items: center;
+}
+
 
 .nav-menu{
     width: 100%;

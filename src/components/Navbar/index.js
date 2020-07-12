@@ -4,6 +4,8 @@ import { Typography, Hidden, IconButton, Drawer, ListItem, List, ListItemText, m
 
 import MenuIcon from '@material-ui/icons/Menu';
 import CloseIcon from '@material-ui/icons/Close';
+import PhoneIcon from '@material-ui/icons/Phone';
+import EmailIcon from '@material-ui/icons/Email';
 import { ExpandMore, ChevronRight } from '@material-ui/icons'
 
 import './nav.css';
@@ -23,13 +25,18 @@ const useStyles = makeStyles({
     toggleButton: {
         color: '#d89736'
     },
+    contactIcon: {
+        marginRight: '15px',
+        color: '#d8973c',
+        fontSize: '20px'
+    },
     nested: {
         paddingLeft: '40px',
     },
     closeButton: {
         paddingLeft: '0',
         paddingRight: '0',
-    }
+    },
 });
 
 const Navbar = () => {
@@ -56,14 +63,15 @@ const Navbar = () => {
 
             <Hidden xsDown>
                 <div className='navlinks'>
-                    <NavLink to='/'>About</NavLink>
-                    <NavLink to='/'>Services</NavLink>
-                    <NavLink to='/'>News</NavLink>
-                    <NavLink to='/contact'>Contact</NavLink>
+                    <NavLink exact to='/'>Home</NavLink>
+                    <NavLink exact to='/about'>About</NavLink>
+                    <NavLink to='/services'>Services</NavLink>
+                    <NavLink exact to='/news'>News</NavLink>
+                    <NavLink exact to='/contact'>Contact</NavLink>
                 </div>
                 <div className='nav-contact'>
-                    <span>Email: jess.el.sutton@gmail.com</span>
-                    <span>Phone: 208-503-9381</span>
+                    <span><EmailIcon className={classes.contactIcon}/> jess.el.sutton@gmail.com</span>
+                    <span><PhoneIcon className={classes.contactIcon}/> 208-503-9381</span>
                 </div>
             </Hidden>
 

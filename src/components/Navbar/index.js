@@ -1,12 +1,14 @@
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom';
-import { Typography, Hidden, IconButton, Drawer, ListItem, List, ListItemText, makeStyles, Divider, Collapse, Box } from '@material-ui/core';
+import { Hidden, IconButton, Drawer, ListItem, List, ListItemText, makeStyles, Divider, Collapse, Box } from '@material-ui/core';
 
 import MenuIcon from '@material-ui/icons/Menu';
 import CloseIcon from '@material-ui/icons/Close';
 import PhoneIcon from '@material-ui/icons/Phone';
 import EmailIcon from '@material-ui/icons/Email';
 import { ExpandMore, ChevronRight } from '@material-ui/icons'
+
+import Logo from '../Logo';
 
 import './nav.css';
 
@@ -57,9 +59,7 @@ const Navbar = () => {
     return (
 
         <Box fontFamily='fontFamily' className='navbar' >
-            <div className='logo'>
-                <Typography varient='h2'>JessicaSutton</Typography>
-            </div>
+            <Logo />
 
             <Hidden xsDown>
                 <div className='navlinks'>
@@ -70,14 +70,14 @@ const Navbar = () => {
                     <NavLink exact to='/contact'>Contact</NavLink>
                 </div>
                 <div className='nav-contact'>
-                    <span>jess.el.sutton@gmail.com<EmailIcon className={classes.contactIcon}/></span>
-                    <span>208-503-9381<PhoneIcon className={classes.contactIcon}/></span>
+                    <span>jess.el.sutton@gmail.com<EmailIcon className={classes.contactIcon} /></span>
+                    <span>208-503-9381<PhoneIcon className={classes.contactIcon} /></span>
                 </div>
             </Hidden>
 
             <Hidden smUp>
                 <IconButton onClick={toggleDrawer}>
-                    <MenuIcon className={classes.toggleButton}/>
+                    <MenuIcon className={classes.toggleButton} />
                 </IconButton>
             </Hidden>
 
@@ -87,11 +87,9 @@ const Navbar = () => {
             >
                 <div className={classes.menuContainer}>
                     <div className={`navbar ${classes.menuHeader}`}>
-                        <div className='logo'>
-                            <Typography varient='h2'>JessicaSutton</Typography>
-                        </div>
+                        <Logo />
                         <IconButton onClick={toggleDrawer} className={classes.closeButton}>
-                            <CloseIcon className={classes.toggleButton}/>
+                            <CloseIcon className={classes.toggleButton} />
                         </IconButton>
                     </div>
                     <Divider />
@@ -104,7 +102,7 @@ const Navbar = () => {
                         </ListItem>
                         <ListItem button onClick={toggleCollapse}>
                             <ListItemText primary="Services" />
-                                {openServices ? <ExpandMore /> : <ChevronRight />}
+                            {openServices ? <ExpandMore /> : <ChevronRight />}
                         </ListItem>
                         <Collapse in={openServices} timeout="auto" unmountOnExit>
                             <List component="div" disablePadding>

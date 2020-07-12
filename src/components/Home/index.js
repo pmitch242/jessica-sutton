@@ -2,6 +2,9 @@ import React from 'react'
 import { Grid, Paper, makeStyles, Container } from '@material-ui/core';
 
 import Intro from './Intro';
+import About from '../About';
+import Services from '../Services';
+import Contact from '../Contact';
 
 import './home.css';
 
@@ -25,14 +28,21 @@ const Home = () => {
                 
                 <Grid container item xs={12} spacing={3}>
                     <Grid container item xs={12}>
-                        <Grid item xs={12}><Paper className={classes.paper}>item</Paper></Grid>
+                        <Grid item xs={12}><Services /></Grid>
                     </Grid>
                 </Grid>
 
                 
                 <Grid container item xs={12} spacing={3}>
                     <Grid container item xs={12}>
-                        <Grid item xs={12}><Paper className={classes.paper}>item</Paper></Grid>
+                        <Grid item xs={12}><About /></Grid>
+                    </Grid>
+                </Grid>
+
+                
+                <Grid container item xs={12} spacing={3}>
+                    <Grid container item xs={12}>
+                        <Grid item xs={12}><Contact /></Grid>
                     </Grid>
                 </Grid>
 

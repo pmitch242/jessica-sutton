@@ -1,31 +1,22 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import { ThemeProvider } from '@material-ui/core/styles';
-
-import theme from './theme';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Contact from './components/Contact';
-import NotFound from './components/NotFound';
 
+import './App.css';
 
 function App() {
-
   return (
     <div className="App">
-      <Router>
-        <ThemeProvider theme={theme}>
-          <Navbar />
-
-          <Switch>
-            <Route exact path='/' component={Home} />
-            <Route exact path='/contact' component={Contact} />
-            <Route component={NotFound} />
-          </Switch>
-        </ThemeProvider>
-      </Router>
-
+        <Router>
+          <Navbar/>
+            <Switch>
+                <Route exact path='/' component={Home} />
+                <Route exact path='/contact' component={Contact} />
+            </Switch>
+        </Router>
     </div>
   );
 }

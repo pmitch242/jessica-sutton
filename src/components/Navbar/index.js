@@ -4,7 +4,7 @@ import { Typography, Hidden, IconButton, Drawer, ListItem, List, ListItemText, m
 
 import MenuIcon from '@material-ui/icons/Menu';
 import CloseIcon from '@material-ui/icons/Close';
-import { ExpandLess, ExpandMore, ChevronRight } from '@material-ui/icons'
+import { ExpandMore, ChevronRight } from '@material-ui/icons'
 
 import './nav.css';
 

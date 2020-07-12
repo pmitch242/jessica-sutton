@@ -5,6 +5,21 @@ const useStyle = makeStyles({
     container: {
         maxWidth: '600px',
         marginTop: '175px',
+        color: '#e9e9e9'
+    },
+    button: {
+        color: '#d8973c',
+        borderColor: '#d8973c',
+        marginTop: '40px'
+    },
+    title: {
+        color: '#e9e9e9',
+        textTransform: 'capitalize',
+        fontWeight: 'bolder'
+    },
+    subtitle: {
+        // color: '#d8973c',
+        fontWeight: '100'
     }
 })
 
@@ -14,18 +29,17 @@ const Intro = () => {
     return (
             <Container id='intro'>
                 <div className={classes.container}>
-                    <Typography variant='h4'>
-                        Fugiat dolor laboris culpa ad labore incididunt nostrud ipsum.
-                </Typography>
+                    <Typography variant='h3' className={classes.title}>
+                        Fugiat dolor laboris culpa ad labore incididunt                   </Typography>
                     <br />
-                    <Typography variant='subtitle1'>
+                    <Typography variant='subtitle2' className={classes.subtitle}>
                         Fugiat dolor laboris culpa ad labore nostrud reprehenderit aute incididunt nostrud ipsum commodo enim.
-                        Commodo ad proident cillum labore qui sunt non.
-                </Typography>
+                        Commodo ad proident cillum labore qui sunt non
+                    </Typography>
                     <br />
-                    <Button variant='outlined'>
+                    <Button variant='outlined' className={classes.button}>
                         Request Free Consultation
-                </Button>
+                    </Button>
                 </div>
             </Container>
     )

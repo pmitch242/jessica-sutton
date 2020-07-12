@@ -1,9 +1,9 @@
 #intro::before{
     content: '';
     background: url('../../images/home-slide-1.jpg');
-    height: 100vh;
+    height: 100%;
     width: 100vw;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: -2;
@@ -14,7 +14,7 @@
 #intro::after{
     content: '';
     background: #001639;
-    height: 100vh;
+    height: 100%;
     width: 100vw;
     position: absolute;
     top: 0;
@@ -25,6 +25,3 @@
     z-index: -1;
 }
 
-/* #intro .MuiButton-outlined{
-    border: #d8973c;
-} */

@@ -1,11 +1,12 @@
 import React from 'react';
-import { makeStyles, Typography, Button, Container } from '@material-ui/core';
+import { makeStyles, Typography, Button } from '@material-ui/core';
 
 const useStyle = makeStyles({
     container: {
         maxWidth: '600px',
-        marginTop: '175px',
-        color: '#e9e9e9'
+        marginTop: '10%',
+        marginBottom: '20%',
+        color: '#e9e9e9',
     },
     button: {
         color: '#e9e9e9',
@@ -24,8 +25,7 @@ const Intro = () => {
     const classes = useStyle();
 
     return (
-        <Container id='intro'>
-            <div className={classes.container}>
+            <div id='intro' className={classes.container}>
                 <Typography variant='h1' className={classes.title}>
                     Fugiat dolor laboris culpa ad labore
                 </Typography>
@@ -39,7 +39,6 @@ const Intro = () => {
                     Request Free Consultation
                 </Button>
             </div>
-        </Container>
     )
 }
 

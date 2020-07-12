@@ -26,12 +26,12 @@ const useStyles = makeStyles({
         color: '#d89736'
     },
     contactIcon: {
-        marginRight: '15px',
+        marginLeft: '15px',
         color: '#d8973c',
         fontSize: '20px'
     },
     nested: {
-        paddingLeft: '40px',
+        paddingLeft: '30px',
     },
     closeButton: {
         paddingLeft: '0',
@@ -70,8 +70,8 @@ const Navbar = () => {
                     <NavLink exact to='/contact'>Contact</NavLink>
                 </div>
                 <div className='nav-contact'>
-                    <span><EmailIcon className={classes.contactIcon}/> jess.el.sutton@gmail.com</span>
-                    <span><PhoneIcon className={classes.contactIcon}/> 208-503-9381</span>
+                    <span>jess.el.sutton@gmail.com<EmailIcon className={classes.contactIcon}/></span>
+                    <span>208-503-9381<PhoneIcon className={classes.contactIcon}/></span>
                 </div>
             </Hidden>
 

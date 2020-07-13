@@ -2,7 +2,7 @@
     content: '';
     background: url('../../images/home-slide-1.jpg');
     height: 100%;
-    width: 100vw;
+    width: 100%;
     position: fixed;
     top: 0;
     left: 0;
@@ -15,7 +15,7 @@
     content: '';
     background: #001639;
     height: 100%;
-    width: 100vw;
+    width: 100%;
     position: absolute;
     top: 0;
     left: 0;

@@ -25,6 +25,7 @@ const Intro = () => {
     const classes = useStyle();
 
     return (
+        <Container>
             <div id='intro' className={classes.container}>
                 <Typography variant='h1' className={classes.title}>
                     Fugiat dolor laboris culpa ad labore
@@ -39,6 +40,7 @@ const Intro = () => {
                     Request Free Consultation
                 </Button>
             </div>
+        </Container>
     )
 }
 

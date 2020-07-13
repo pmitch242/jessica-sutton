@@ -4,6 +4,7 @@ import { makeStyles, Typography } from '@material-ui/core';
 const useStyle = makeStyles({
     container: {
         height: '80vh',
+        backgroundColor: '#f9f9f9',
     },
 })
 
@@ -12,9 +13,7 @@ const Services = () => {
 
     return (
             <div id='about' className={classes.container}>
-                <Typography variant='h1' >
-                    Fugiat dolor laboris culpa ad labore
-                </Typography>
+                test
             </div>
     )
 }

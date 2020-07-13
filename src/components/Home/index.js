@@ -17,21 +17,8 @@ const Home = () => {
 
     return (
         <div id='home'>
-            <Grid container >
-
-                <Grid container item xs={12} >
-                    <Grid container item xs={12}>
-                        <Grid item xs={12}><Container><Intro /></Container></Grid>
-                    </Grid>
-                </Grid>
-
-                
-                <Grid container item xs={12} >
-                    <Grid container item xs={12}>
-                        <Grid item xs={12}><Services /></Grid>
-                    </Grid>
-                </Grid>
-            </Grid>
+            <Intro />
+            <Services />
         </div>
     )
 }

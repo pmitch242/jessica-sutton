@@ -21,7 +21,7 @@ const Home = () => {
 
                 <Grid container item xs={12} >
                     <Grid container item xs={12}>
-                        <Grid item xs={12}><Intro /></Grid>
+                        <Grid item xs={12}><Container><Intro /></Container></Grid>
                     </Grid>
                 </Grid>
 

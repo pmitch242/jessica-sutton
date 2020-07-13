@@ -25,8 +25,7 @@ const Intro = () => {
     const classes = useStyle();
 
     return (
-        <Container>
-            <Box id='intro' className={classes.container}>
+            <div id='intro' className={classes.container}>
                 <Typography variant='h1' className={classes.title}>
                     Fugiat dolor laboris culpa ad labore
                 </Typography>
@@ -39,8 +38,7 @@ const Intro = () => {
                 <Button variant='outlined' className={classes.button}>
                     Request Free Consultation
                 </Button>
-            </Box>
-        </Container>
+            </div>
     )
 }
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Grid, Paper, makeStyles, Container } from '@material-ui/core';
+import { Grid, makeStyles, Container } from '@material-ui/core';
 
 import Intro from './Intro';
 import About from '../About';

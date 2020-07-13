@@ -16,39 +16,23 @@ const Home = () => {
     const classes = useStyle();
 
     return (
-        <Container id='home'>
-            <Grid container spacing={1}>
+        <div id='home'>
+            <Grid container >
 
-                <Grid container item xs={12} spacing={3}>
+                <Grid container item xs={12} >
                     <Grid container item xs={12}>
                         <Grid item xs={12}><Intro /></Grid>
                     </Grid>
                 </Grid>
 
                 
-                <Grid container item xs={12} spacing={3}>
+                <Grid container item xs={12} >
                     <Grid container item xs={12}>
                         <Grid item xs={12}><Services /></Grid>
                     </Grid>
                 </Grid>
-
-                
-                <Grid container item xs={12} spacing={3}>
-                    <Grid container item xs={12}>
-                        <Grid item xs={12}><About /></Grid>
-                    </Grid>
-                </Grid>
-
-                
-                <Grid container item xs={12} spacing={3}>
-                    <Grid container item xs={12}>
-                        <Grid item xs={12}><Contact /></Grid>
-                    </Grid>
-                </Grid>
-
-                
             </Grid>
-        </Container>
+        </div>
     )
 }
 

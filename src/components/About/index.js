@@ -49,7 +49,7 @@ const About = () => {
     return (
         <div id='about' className={classes.root}>
             <Container >
-                <Typography variant='h2' color='secondary' className={classes.h2}>Your Lawyer</Typography>
+                <Typography variant='h2' color='primary' className={classes.h2}>Your Lawyer</Typography>
 
                 <Divider className={classes.divider} />
 

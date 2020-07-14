@@ -30,7 +30,7 @@ const Services = () => {
     return (
         <div id='services' className={classes.root}>
             <Container >
-                <Typography variant='h2' color='secondary' className={classes.h2}>Our Services</Typography>
+                <Typography variant='h2' color='primary' className={classes.h2}>Our Services</Typography>
 
                 <Divider className={classes.divider}/>
 

@@ -29,7 +29,7 @@ const Contact = () => {
     return (
         <div id='about' className={classes.root}>
             <Container >
-                <Typography variant='h2' color='secondary' className={classes.h2}>Get Free Consultation</Typography>
+                <Typography variant='h2' color='primary' className={classes.h2}>Get Free Consultation</Typography>
 
                 <Divider className={classes.divider} />
 

@@ -19,6 +19,7 @@ const Home = () => {
         <div id='home'>
             <Intro />
             <Services />
+            <About />
         </div>
     )
 }

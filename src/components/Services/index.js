@@ -28,7 +28,7 @@ const Services = () => {
     const classes = useStyle();
 
     return (
-        <div id='about' className={classes.root}>
+        <div id='services' className={classes.root}>
             <Container >
                 <Typography variant='h2' color='secondary' className={classes.h2}>Our Services</Typography>
 

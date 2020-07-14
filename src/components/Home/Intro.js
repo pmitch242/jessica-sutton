@@ -1,11 +1,11 @@
 import React from 'react';
-import { makeStyles, Typography, Button, Box, Container } from '@material-ui/core';
+import { makeStyles, Typography, Button, Container } from '@material-ui/core';
 
 const useStyle = makeStyles({
     container: {
         maxWidth: '600px',
         marginTop: '10%',
-        marginBottom: '20%',
+        marginBottom: '22%',
         color: '#e9e9e9',
     },
     button: {

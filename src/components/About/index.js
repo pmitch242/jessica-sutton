@@ -9,7 +9,7 @@ import ServiceCard from '../Services/ServiceCard';
 const useStyle = makeStyles({
     root: {
         backgroundColor: '#e9e9e9',
-        paddingTop: '100px',
+        paddingTop: '125px',
         paddingBottom: '100px',
     },
     h2: {
@@ -49,17 +49,21 @@ const About = () => {
     return (
         <div id='about' className={classes.root}>
             <Container >
-                <Typography variant='h2' color='primary' className={classes.h2}>Your Lawyer</Typography>
+                <Typography variant='h2' color='primary' className={classes.h2}>Jessica Sutton</Typography>
 
                 <Divider className={classes.divider} />
 
                 <Grid container spacing={3} className={classes.container}>
                     <Grid item xs={12} sm={7} >
-                        <Typography variant='h2' className={classes.h2}>
-                            Jessica Sutton
+                        <Typography variant='body1' className={classes.body} color='primary'>
+                            Jessica Sutton has over a decade of experience in representing death-eligible and death-sentenced clients as both an attorney and a mitigation specialist. In her role as an attorney, Ms. Sutton has represented clients in state and federal proceedings, including state post-conviction and federal habeas corpus proceedings, lethal injection litigation, Section 1983 civil rights lawsuits, and clemency.
                         </Typography>
-                        <Typography variant='body1' className={classes.body}>
-                            Enim Lorem do adipisicing nostrud aliquip excepteur cupidatat officia culpa officia tempor do. Dolor fugiat dolore cillum esse sunt proident Lorem irure aliqua excepteur adipisicing occaecat officia. Ea aliquip cillum dolor laboris laboris irure magna ipsum deserunt exercitation cupidatat. Ad proident quis sint exercitation nisi magna sint nostrud ullamco deserunt. Ea consequat cillum do id eu. Laborum minim ea proident cupidatat sunt exercitation nisi.
+                        <Typography variant='body1' className={classes.body} color='primary'>
+                            As a capital mitigation specialist, Ms. Sutton has conducted dozens of mitigation investigations around the country and at nearly every stage of proceedings--from pre-trial to clemency. Ms. Sutton is experienced in developing multi-generational life history narratives and conducting investigations related to competency and Atkins. Ms. Sutton is also trained in identifying signs and symptoms of mental illness, trauma interviewing, and working with a variety of experts.
+                        </Typography>
+
+                        <Typography variant='body1' className={classes.body} color='primary'>
+                            In addition to capital work, Ms. Sutton regularly conducts mitigation investigations in felony sentencings, parole cases, and cases petitioning for sentence modifications for individuals sentenced to life as juveniles. She also travels around the country to present at conferences concerning mitigation investigation and frequently trains and consults with teams nationwide.
                         </Typography>
 
                         <Grid container spacing={1} >

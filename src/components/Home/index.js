@@ -1,10 +1,10 @@
 import React from 'react'
-import { Grid, makeStyles, Container } from '@material-ui/core';
+import { makeStyles } from '@material-ui/core';
 
 import Intro from './Intro';
 import About from '../About';
 import Services from '../Services';
-import Contact from '../Contact';
+// import Contact from '../Contact';
 
 import './home.css';
 
@@ -16,7 +16,7 @@ const Home = () => {
     const classes = useStyle();
 
     return (
-        <div id='home'>
+        <div id='home' className={classes.home}>
             <Intro />
             <Services />
             <About />

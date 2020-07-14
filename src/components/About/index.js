@@ -1,5 +1,5 @@
 import React from 'react';
-import { makeStyles, Typography, Container, Divider, Grid, Paper } from '@material-ui/core';
+import { makeStyles, Typography, Container, Divider, Grid } from '@material-ui/core';
 
 import jess from '../../images/jess.jpg';
 

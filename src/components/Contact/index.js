@@ -8,8 +8,8 @@ import Logo from '../Logo'
 const useStyle = makeStyles({
     root: {
         backgroundColor: '#e9e9e9',
-        paddingTop: '100px',
-        paddingBottom: '100px',
+        paddingTop: '75px',
+        paddingBottom: '150px',
     },
     h2: {
         marginBottom: '10px',

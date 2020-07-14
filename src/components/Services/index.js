@@ -11,8 +11,8 @@ import ServiceCard from './ServiceCard';
 const useStyle = makeStyles({
     root: {
         backgroundColor: '#f9f9f9',
-        paddingTop: '125px',
-        paddingBottom: '100px',
+        paddingTop: '50px',
+        paddingBottom: '150px',
     },
     conatiner: {
         margin: '50px auto'

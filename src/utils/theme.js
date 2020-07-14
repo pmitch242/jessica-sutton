@@ -29,6 +29,7 @@ const theme = createMuiTheme({
             fontFamily: `'Noto Serif', serif`,
             fontWeight: 400,
             fontSize: "2rem",
+            // color: '#001639'
         },
         h3: {},
         subtitle1: {

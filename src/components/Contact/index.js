@@ -2,6 +2,7 @@ import React from 'react';
 import { makeStyles, Typography, Container, Divider, Grid } from '@material-ui/core';
 
 import ServiceCard from '../Services/ServiceCard';
+import ContactForm from './ContactForm';
 
 const useStyle = makeStyles({
     root: {
@@ -34,7 +35,7 @@ const Contact = () => {
 
                 <Grid container spacing={4} className={classes.container}>
                     <Grid item xs={12} sm={6}>
-                        <ServiceCard />
+                        <ContactForm />
                     </Grid>
                     <Grid item xs={12} sm={6}>
                         <div id='contact-card' className={classes.contactCard}>

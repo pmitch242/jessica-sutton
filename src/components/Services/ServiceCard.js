@@ -42,7 +42,7 @@ const ServiceCard = ({ icon, title, link }) => {
                     <div className={classes.iconDiv}>
                         <img alt={title} src={icon} className={classes.iconDiv}/>
                     </div>
-                        <Link to={link} className={classes.link}>Learn More</Link>
+                        <Link to={`${link}`} className={classes.link}>Learn More</Link>
                 </div>
             </CardContent>
         </Card>

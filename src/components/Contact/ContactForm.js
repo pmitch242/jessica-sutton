@@ -4,7 +4,7 @@ import { makeStyles, TextField, Grid, Button, Paper } from '@material-ui/core'
 
 const useStyle = makeStyles({
     root: {
-        padding: '16px',
+        padding: '25px',
     },
     gridRoot: {
         marginBottom: '20px'
@@ -13,7 +13,8 @@ const useStyle = makeStyles({
         marginBottom: '35px'
     },
     label: {
-        color: '#001639'
+        color: '#001639',
+        fontFamily: `'Noto Sans TC', sans-serif`
     },
     button: {
         width: '50%',

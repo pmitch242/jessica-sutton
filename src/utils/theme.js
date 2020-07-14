@@ -26,7 +26,11 @@ const theme = createMuiTheme({
             fontSize: "2rem",
             // color: '#001639'
         },
-        h3: {},
+        h3: {
+            fontFamily: `'Noto Serif', serif`,
+            fontWeight: 400,
+            fontSize: "1.5rem",
+        },
         subtitle1: {
             fontWeight: 300,
             fontSize: '1rem',

@@ -5,7 +5,6 @@ import { makeStyles, TextField, Grid, Button, Paper } from '@material-ui/core'
 const useStyle = makeStyles({
     root: {
         padding: '16px',
-        backgroundColor: '#f9f9f9'
     },
     gridRoot: {
         marginBottom: '20px'

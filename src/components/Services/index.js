@@ -1,5 +1,5 @@
 import React from 'react';
-import { makeStyles, Typography, Container, Card, CardContent, Grid } from '@material-ui/core';
+import { makeStyles, Typography, Container, Divider, Grid } from '@material-ui/core';
 
 import ServiceCard from './ServiceCard';
 
@@ -13,8 +13,15 @@ const useStyle = makeStyles({
         margin: '50px auto' 
     },
     h2: {
-        marginBottom: '20px'
-    }
+        marginBottom: '10px',
+    
+    },
+    divider: {
+        marginBottom: '30px',
+        maxWidth: '250px',
+        height: '3px',
+        backgroundColor: '#d8973c'
+    },
 })
 
 const Services = () => {
@@ -24,6 +31,9 @@ const Services = () => {
         <div id='about' className={classes.root}>
             <Container >
                 <Typography variant='h2' color='secondary' className={classes.h2}>Our Services</Typography>
+
+                <Divider className={classes.divider}/>
+
                 <Grid container spacing={1} className={classes.container}>
                     <Grid item xs={12} sm={4}>
                         <ServiceCard />

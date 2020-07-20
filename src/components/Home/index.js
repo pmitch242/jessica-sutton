@@ -20,6 +20,7 @@ const Home = () => {
             <Intro />
             <Services />
             <About />
+            {/* <div className='gap'></div> */}
             <Contact />
         </div>
     )

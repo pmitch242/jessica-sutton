@@ -17,7 +17,8 @@ const useStyle = makeStyles({
         color: '#001639',
         fontSize: '1rem',
         fontFamily: `'Noto Sans TC', sans-serif`,
-        fontWeight: '400'
+        fontWeight: '500',
+        letterSpacing: '0.75px',
     },
     iconDiv: {
         color: '#001639',

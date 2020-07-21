@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { Slide, AppBar, Toolbar, Typography } from '@material-ui/core';
-import useScrollTrigger from '@material-ui/core/useScrollTrigger';
+import { Slide, AppBar, useScrollTrigger, makeStyles } from '@material-ui/core';
 
 import Navbar from './components/Navbar';
 import Home from './components/Home';
@@ -10,6 +9,12 @@ import Services from './components/Services';
 import Contact from './components/Contact';
 
 import './App.css';
+
+const useStyle = makeStyles({
+  navbar: {
+    backgroundColor: '#001639d1',
+  }
+})
 
 function HideOnScroll(props) {
   const { children, window } = props;
@@ -23,11 +28,13 @@ function HideOnScroll(props) {
 }
 
 function App() {
+  const classes = useStyle();
+
   return (
     <div className="App">
       <Router>
         <HideOnScroll>
-          <AppBar>
+          <AppBar className={classes.navbar}>
             <Navbar />
           </AppBar>
         </HideOnScroll>

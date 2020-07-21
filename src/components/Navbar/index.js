@@ -17,7 +17,6 @@ const useStyles = makeStyles({
     menuContainer: {
         width: '100vw',
         height: '100%',
-        background: '#001639',
         color: '#e9e9e9'
     },
     menuHeader: {

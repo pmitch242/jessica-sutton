@@ -1,7 +1,6 @@
 .navbar{
     position: sticky;
     top: 0;
-    background-color: #001639c7;
     padding: 10px 15px;
     display: flex;
     justify-content: space-between;

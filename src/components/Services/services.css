@@ -1,0 +1,9 @@
+.service-card:hover{
+    background-color: #d8973c;
+    cursor: pointer;
+}
+
+.service-card:hover .MuiTypography-h3,
+.service-card:hover .makeStyles-link-27{
+    color: #e9e9e9;
+}

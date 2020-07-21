@@ -8,6 +8,8 @@ import docIcon from '../../icons/svg/006-stethoscope.svg';
 
 import ServiceCard from './ServiceCard';
 
+import './services.css'
+
 const useStyle = makeStyles({
     root: {
         backgroundColor: '#f9f9f9',

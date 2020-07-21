@@ -9,8 +9,7 @@ import ServiceCard from '../Services/ServiceCard';
 const useStyle = makeStyles({
     root: {
         backgroundColor: '#e9e9e9',
-        paddingTop: '50px',
-        paddingBottom: '150px',
+        padding: '90px 0'
     },
     h2: {
         marginBottom: '10px',

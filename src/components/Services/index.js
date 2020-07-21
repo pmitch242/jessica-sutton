@@ -11,8 +11,7 @@ import ServiceCard from './ServiceCard';
 const useStyle = makeStyles({
     root: {
         backgroundColor: '#f9f9f9',
-        paddingTop: '50px',
-        paddingBottom: '150px',
+        padding: '90px 0'
     },
     conatiner: {
         margin: '50px auto'
@@ -95,7 +94,7 @@ const Services = () => {
                         <Card className={classes.extraCard}>
                             <CardContent className={classes.extraCardContent}>
                                 <Typography variant='h2' className={classes.cardH2}>Services</Typography>
-                                <Divider color='secondary' className={classes.cardDivider}/>
+                                <Divider color='secondary' className={classes.cardDivider} />
                                 <Typography variant='body1'>
                                     We are highly experienced, thoughtful in our role as advocates, and committed to being responsive to what our clients need and demand.
                                 </Typography>

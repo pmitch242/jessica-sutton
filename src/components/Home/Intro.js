@@ -4,8 +4,7 @@ import { makeStyles, Typography, Button, Container } from '@material-ui/core';
 const useStyle = makeStyles({
     container: {
         maxWidth: '600px',
-        marginTop: '10%',
-        marginBottom: '22%',
+        margin: '25% 0',
         color: '#e9e9e9',
     },
     button: {

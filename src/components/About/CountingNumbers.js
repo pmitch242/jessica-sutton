@@ -15,35 +15,35 @@ const useStyle = makeStyles({
         borderRadius: '20px',
         color: '#fff',
         fontFamily: `'Noto Sans TC', sans-serif`,
-        lineHeight: '20px'
-    },
+        lineHeight: '20px',
+},
     number: {
-        fontSize: '2rem',
-        marginRight: '2px',
-        fontWeight: 'bolder',
-    },
+    fontSize: '2rem',
+    marginRight: '2px',
+    fontWeight: 'bolder',
+},
     plus: {
-        fontSize: '1.75rem',
-        position: 'absolute',
-        color: '#d8973c',
-        fontWeight: '900',
-    },
+    fontSize: '1.75rem',
+    position: 'absolute',
+    color: '#d8973c',
+    fontWeight: '900',
+},
     title: {
-        fontSize: '1.5rem',
-        textTransform: 'capitalize',
-        fontWeight: '400',
-        letterSpacing: '1px',
-        
-    },
+    fontSize: '1.5rem',
+    textTransform: 'capitalize',
+    fontWeight: '400',
+    letterSpacing: '1px',
+
+},
 })
 const CountingNumbers = () => {
     const classes = useStyle();
 
     return (
         <Box id='counting-numbers' className={classes.root}>
-            <div style={{marginBottom: '10px'}}>
+            <div style={{ marginBottom: '10px' }}>
                 <span className={classes.number}>35</span>
-                 <span className={classes.plus}>+</span>
+                <span className={classes.plus}>+</span>
             </div>
             <span className={classes.title}>Clients</span>
         </Box>

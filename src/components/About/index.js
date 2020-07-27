@@ -8,7 +8,7 @@ import './about.css';
 
 const useStyle = makeStyles({
     root: {
-        backgroundColor: '#e9e9e9',
+        backgroundColor: '#f9f9f9',
         padding: '90px 0'
     },
     h2: {
@@ -28,6 +28,7 @@ const useStyle = makeStyles({
     },
     body: {
         marginBottom: '20px',
+        lineHeight: 1.2,
     },
     imgDiv: {
         width: 'inherit',
@@ -36,7 +37,8 @@ const useStyle = makeStyles({
     img: {
         maxWidth: '-webkit-fill-available',
         height: 'auto',
-        borderRadius: '5px'
+        borderRadius: '5px',
+        boxShadow: '-80px 50px 0px #e9e9e9',
     }
 })
 
@@ -50,7 +52,7 @@ const About = () => {
                 <Divider className={classes.divider} />
 
 
-                <Grid container spacing={3} className={classes.container}>
+                <Grid container spacing={1} className={classes.container}>
                     <Grid item xs={12} sm={5}>
                         <div>
                             <div className='jess-img-div'>

@@ -36,9 +36,8 @@ const useStyle = makeStyles({
     },
     img: {
         maxWidth: '-webkit-fill-available',
-        height: '115%',
-        position: 'relative',
-        top: '-75px'
+        height: 'auto',
+        borderRadius: '5px'
     }
 })
 
@@ -48,14 +47,18 @@ const About = () => {
     return (
         <div id='about' className={classes.root}>
             <Container >
-                <Typography variant='h2' color='primary' className={classes.h2}>Jessica Sutton</Typography>
 
-                <Divider className={classes.divider} />
 
                 <Grid container spacing={3} className={classes.container}>
-                    <Grid item xs={12} sm={7} >
+                    <Grid item xs={12} sm={5}>
+                        <img alt='Jessica Sutton' src={jess} className={`jessImg ${classes.img}`} />
+                    </Grid>
 
+                    <Grid item xs={12} sm={7} >
                         <Box>
+                            <Typography variant='h2' color='primary' className={classes.h2}>Jessica Sutton</Typography>
+                            <Divider className={classes.divider} />
+
                             <Typography variant='body1' className={classes.body} color='primary'>
                                 Jessica Sutton has over a decade of experience in representing death-eligible and death-sentenced clients as both an attorney and a mitigation specialist. In her role as an attorney, Ms. Sutton has represented clients in state and federal proceedings, including state post-conviction and federal habeas corpus proceedings, lethal injection litigation, Section 1983 civil rights lawsuits, and clemency.
                         </Typography>
@@ -79,9 +82,6 @@ const About = () => {
                                 </Grid>
                             </Grid>
                         </Box>
-                    </Grid>
-                    <Grid item xs={12} sm={5}>
-                        <img alt='Jessica Sutton' src={jess} className={`jessImg ${classes.img}`} />
                     </Grid>
                 </Grid>
             </Container>

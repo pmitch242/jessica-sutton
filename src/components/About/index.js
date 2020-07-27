@@ -77,15 +77,15 @@ const About = () => {
 
                             <Grid container spacing={10} >
                                 <Grid item xs={12} sm={4}>
-                                    <CountingNumbers number='' title=''/>
+                                    <CountingNumbers number='35' title='Clients' />
                                 </Grid>
 
                                 <Grid item xs={12} sm={4}>
-                                    <CountingNumbers />
+                                    <CountingNumbers number='08' title='Clients' />
                                 </Grid>
 
                                 <Grid item xs={12} sm={4}>
-                                    <CountingNumbers />
+                                    <CountingNumbers number='17' title='Clients' />
                                 </Grid>
                             </Grid>
                         </Box>

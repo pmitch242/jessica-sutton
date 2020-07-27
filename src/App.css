@@ -1,8 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Noto+Serif:wght@400;700&display=swap');
 
+.app{
+  overflow-x: hidden;
+}
+
 @media only screen and (max-width: 600px) {
-    .jessImg {
-      top: 0!important;
-      height: auto!important;
-    }
+    #jess-img, #counting-numbers {
+      box-shadow: none;
+  }
+
+  #footer {
+    margin-top: -6%;
+}
   }

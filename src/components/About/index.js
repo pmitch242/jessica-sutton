@@ -56,7 +56,7 @@ const About = () => {
                     <Grid item xs={12} sm={5}>
                         <div>
                             <div className='jess-img-div'>
-                                <img alt='Jessica Sutton' src={jess} className={` ${classes.img}`} />
+                                <img alt='Jessica Sutton' src={jess} id='jess-img' className={` ${classes.img}`} />
                             </div>
                         </div>
                     </Grid>

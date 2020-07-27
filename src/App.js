@@ -13,7 +13,7 @@ import './App.css';
 
 const useStyle = makeStyles({
   navbar: {
-    backgroundColor: '#001639d1',
+    backgroundColor: '#001639f0',
   }
 })
 
@@ -32,7 +32,7 @@ function App() {
   const classes = useStyle();
 
   return (
-    <div className="App">
+    <div className="app">
       <Router>
         <HideOnScroll>
           <AppBar className={classes.navbar}>

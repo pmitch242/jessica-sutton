@@ -27,6 +27,8 @@ const useStyles = makeStyles({
     menuHeader: {
         backgroundColor: 'inherit',
         color: '#e9e9e9',
+        padding: '0',
+
     },
     toggleButton: {
         color: '#d89736',

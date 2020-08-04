@@ -18,10 +18,18 @@ const theme = createMuiTheme({
         h1: {
             fontFamily: `'Noto Serif', serif`,
             fontWeight: 700,
-            fontSize: '2.25rem',
+            textAlign: 'center',
+            lineHeight: '45px',
+            fontSize: '2.4rem',
+        letterSpacing: '2px',
+        marginBottom: '12px',
             '@media (min-width:600px)': {
                 fontSize: '3.5rem',
-              }
+                lineHeight: '60px',
+                textAlign: 'left',
+                letterSpacing: '1px',
+                marginBottom: '5px',
+            }
         },
         h2: {
             fontFamily: `'Noto Serif', serif`,

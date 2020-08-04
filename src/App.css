@@ -6,6 +6,7 @@
 }
 
 @media only screen and (max-width: 600px) {
+  /* Home */
   #intro{
     background-position-x: 75%;
   }
@@ -16,5 +17,13 @@
 
   #footer {
     margin-top: -6%;
-}
   }
+}
+
+@media only screen and (min-width: 600px) {
+  /* Home */
+  .intro-title{
+    text-align: left;
+  }
+}
+

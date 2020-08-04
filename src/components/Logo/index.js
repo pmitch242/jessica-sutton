@@ -17,7 +17,7 @@ const Logo = () => {
 
     return (
         <Box className='logo' display='flex' alignItems="flex-end">
-            <CourtIcon style={{ fontSize: 40, marginRight: '5px', color: '#d8973c' }}/>
+            <CourtIcon style={{ fontSize: 35, marginRight: '5px', color: '#d8973c' }}/>
             <Typography className={classes.h3} variant='h3'>Sutton</Typography>
         </Box>
     )

@@ -19,6 +19,9 @@ const theme = createMuiTheme({
             fontFamily: `'Noto Serif', serif`,
             fontWeight: 700,
             fontSize: "3.5rem",
+            '@media (max-width:600px)': {
+                fontSize: '2.5rem',
+              }
         },
         h2: {
             fontFamily: `'Noto Serif', serif`,
@@ -30,6 +33,7 @@ const theme = createMuiTheme({
             fontFamily: `'Noto Serif', serif`,
             fontWeight: 400,
             fontSize: "1.5rem",
+
         },
         subtitle1: {
             fontWeight: 300,

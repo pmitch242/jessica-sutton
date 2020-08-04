@@ -14,10 +14,14 @@ import './nav.css';
 
 // styles
 const useStyles = makeStyles({
+    root: {
+        position: 'sticky',
+        top: 0
+    },
     menuContainer: {
         width: '100vw',
         height: '100%',
-        color: '#e9e9e9', 
+        color: '#e9e9e9',
         backgroundColor: '#001639',
     },
     menuHeader: {
@@ -25,7 +29,8 @@ const useStyles = makeStyles({
         color: '#e9e9e9',
     },
     toggleButton: {
-        color: '#d89736'
+        color: '#d89736',
+        fontSize: '2.5rem',
     },
     contactIcon: {
         marginLeft: '15px',
@@ -58,7 +63,7 @@ const Navbar = () => {
 
     return (
 
-        <Box fontFamily='fontFamily' className='navbar' >
+        <Box fontFamily='fontFamily' className={`navbar ${classes.root}`} >
             <Logo />
 
             <Hidden xsDown>
@@ -76,7 +81,7 @@ const Navbar = () => {
             </Hidden>
 
             <Hidden smUp>
-                <IconButton onClick={toggleDrawer}>
+                <IconButton onClick={toggleDrawer} style={{ padding: '0' }}>
                     <MenuIcon className={classes.toggleButton} />
                 </IconButton>
             </Hidden>

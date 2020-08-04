@@ -4,8 +4,8 @@ import { makeStyles, Typography, Button, Container } from '@material-ui/core';
 const useStyle = makeStyles({
     container: {
         maxWidth: '600px',
-        margin: '20% 0 50%',
-        color: '#e9e9e9',
+        color: '#ffffff',
+        paddingTop: '200px'
     },
     button: {
         color: '#e9e9e9',
@@ -24,22 +24,26 @@ const Intro = () => {
     const classes = useStyle();
 
     return (
-        <Container>
-            <div id='intro' className={classes.container}>
-                <Typography variant='h1' className={classes.title}>
-                    Fugiat dolor laboris culpa ad labore
-                </Typography>
-                <br />
-                <Typography variant='subtitle1'>
-                    Fugiat dolor laboris culpa ad labore nostrud reprehenderit aute incididunt nostrud ipsum commodo enim.
-                    Commodo ad proident cillum labore qui sunt non
+        <div id='intro'>
+            <div className='intro-background'>
+                <Container>
+                    <div className={classes.container} id='intro-info-div'>
+                        <Typography variant='h1' className={classes.title}>
+                            Fugiat dolor laboris culpa ad labore
                     </Typography>
-                <br />
-                <Button variant='outlined' className={classes.button}>
-                    Request Free Consultation
+                        <br />
+                        <Typography variant='subtitle1'>
+                            Fugiat dolor laboris culpa ad labore nostrud reprehenderit aute incididunt nostrud ipsum commodo enim.
+                            Commodo ad proident cillum labore qui sunt non
+                    </Typography>
+                        <br />
+                        <Button variant='outlined' className={classes.button}>
+                            Request Free Consultation
                 </Button>
+                    </div>
+                </Container>
             </div>
-        </Container>
+        </div>
     )
 }
 

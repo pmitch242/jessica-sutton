@@ -1,29 +1,21 @@
-/* #intro::after{
-    content: '';
-    background: url('../../images/home-slide-1.jpg');
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -2;
+#intro{
+    background-image: url('../../images/home-slide-1.jpg');
+    background-position-y: 24%;
+    background-color: #fff;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 92vh;
 }
 
-#intro::before{
+.intro-background{
     content: '';
-    background: #0016398c;
     height: 100%;
     width: 100%;
-    position: fixed;
     top: 0;
     left: 0;
-    opacity: 0.75;
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: -1;
-} */
+    background-color: #001639ad;
+    z-index: 0;
+}
 
 .gap{
     height: 30vh;

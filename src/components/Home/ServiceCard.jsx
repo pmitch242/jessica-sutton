@@ -14,7 +14,7 @@ const ServiceCard = (props) => {
     return (
         <div className={props.name + '-service-card'}>
             <div className='service-card'>
-                <h1>{props.title}</h1>
+                <h1 className='h1'>{props.title}</h1>
                 <Divider className={classes.divider} />
                 <span>Learn More</span>
             </div>

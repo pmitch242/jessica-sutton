@@ -17,6 +17,75 @@
     z-index: 0;
 }
 
+/* Services Section */
+#services-section{
+    padding-top: 80px;
+}
+
+.consult-service-card{
+    background-image: url(./images/consult-image.jpg);
+    background-size: cover;
+    border-radius: 15px;
+}
+
+.direct-rep-service-card{
+    background-image: url(/static/media/direct-rep-image.7fa9353a.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 -135px;
+    border-radius: 15px;
+}
+
+.training-service-card{
+    background-image: url(./images/training-image.jpg);
+    background-size: cover;
+    border-radius: 15px;
+}
+
+.mentor-service-card{
+    background-image: url(./images/mentor-image.jpg);
+    background-size: cover;
+    border-radius: 15px;
+}
+
+.service-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(0, 22, 57, 0.5);
+    color: #f9f9f9;
+    height: 230px;
+    padding: 0 25px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+}
+
+.service-card h1{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 10px auto;
+    font-family: 'Noto Serif', serif;
+}
+
+.direct-rep-service-card .service-card h1{
+    letter-spacing: 0px;
+}
+
+.training-service-card .service-card h1,
+.mentor-service-card .service-card h1{
+    letter-spacing: 4px;
+}
+
+.service-card span{
+    text-align: right;
+    position: relative;
+    top: 15%;
+    font-size: 16px;
+    letter-spacing: 3px;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
 .gap{
     height: 30vh;
     width: 100vw;

@@ -1,5 +1,5 @@
 import React from 'react'
-import { makeStyles } from '@material-ui/core';
+import { makeStyles, Container } from '@material-ui/core';
 
 import Intro from './Intro';
 import ServiceList from './ServiceList';
@@ -20,9 +20,9 @@ const Home = () => {
             <Intro />
 
             {/* Sevices Section */}
-            <section id='services-section'>
+            <Container id='services-section'>
                 <ServiceList />
-            </section>
+            </Container>
 
             <About />
             {/* <div className='gap'></div> */}

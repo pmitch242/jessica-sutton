@@ -2,7 +2,9 @@ import React from 'react';
 import { makeStyles, Typography, Container, Divider, Grid, Box } from '@material-ui/core';
 
 import CountingNumbers from './CountingNumbers';
-import jess from '../../images/jess.jpg';
+
+import jess from './jessica.png';
+// import jess from '../../images/jess.jpg';
 
 import './about.css';
 

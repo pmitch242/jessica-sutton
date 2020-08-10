@@ -29,7 +29,7 @@
 }
 
 .direct-rep-service-card{
-    background-image: url(/static/media/direct-rep-image.7fa9353a.jpg);
+    background-image: url(./images/direct-rep-image.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0 50%;

@@ -7,13 +7,14 @@ const ServiceList = () => {
 
 
     return (
-        <div id='service-list'>
+        <div id='services-list'>
             <Grid container spacing={2}>
                 <Grid item xs={12} sm={6} md={4}>
-                    <ServiceCard
-                        name='consult'
-                        title='Consultation'
-                    />
+                        <ServiceCard
+                            name='consult'
+                            title='Consultation'
+                            link='consultation'
+                        />
                 </Grid>
 
 
@@ -21,6 +22,7 @@ const ServiceList = () => {
                     <ServiceCard
                         name='direct-rep'
                         title='Direct Representation'
+                        link='direct-representation'
                     />
                 </Grid>
 
@@ -28,6 +30,7 @@ const ServiceList = () => {
                     <ServiceCard
                         name='training'
                         title='Training'
+                        link='training'
                     />
                 </Grid>
 
@@ -35,6 +38,7 @@ const ServiceList = () => {
                     <ServiceCard
                         name='mentor'
                         title='Mentorship'
+                        link='mentorship'
                     />
                 </Grid>
 

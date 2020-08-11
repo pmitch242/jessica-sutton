@@ -22,6 +22,10 @@
     padding-top: 80px;
 }
 
+#services-list a {
+    text-decoration: none;
+}
+
 .consult-service-card{
     background-image: url(./images/consult-image.jpg);
     background-size: cover;
@@ -60,6 +64,8 @@
     border-radius: 15px;
     margin-bottom: 40px;
 }
+
+
 
 .direct-rep-service-card .service-card .h1{
     letter-spacing: 0px;

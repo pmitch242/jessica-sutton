@@ -1,5 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core';
+import PageHeader from '../PageHeader';
 
 import './services.css'
 
@@ -7,7 +8,6 @@ const useStyle = makeStyles({
     root: {
         backgroundColor: '#f9f9f9',
     },
-
 })
 
 const Services = () => {
@@ -15,7 +15,7 @@ const Services = () => {
 
     return (
         <div id='services' className={classes.root}>
-            <h1>In Services</h1>
+            <PageHeader name='Sevices Page'/>
         </div>
     )
 }

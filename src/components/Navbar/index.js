@@ -38,7 +38,10 @@ const useStyles = makeStyles({
     },
     toggleButton: {
         color: '#d89736',
-        fontSize: '2.5rem',
+        fontSize: '2.25rem',
+    },
+    list: {
+        marginTop: '60px',
     },
     contactIcon: {
         marginLeft: '15px',
@@ -71,7 +74,7 @@ const Navbar = () => {
     return (
 
         <Box fontFamily='fontFamily' className={`navbar ${classes.root}`} >
-            <Link to='/' style={{ textDecoration: 'none', color: 'inherit', marginLeft: '13px'}}><Logo /></Link>
+            <Link to='/' style={{ textDecoration: 'none', color: 'inherit', marginLeft: '13px' }}><Logo /></Link>
 
             <Hidden xsDown>
                 <div className='navlinks'>
@@ -99,13 +102,13 @@ const Navbar = () => {
             >
                 <div className={classes.menuContainer}>
                     <div className={`navbar ${classes.menuHeader}`}>
-                        <Link to='/' style={{ textDecoration: 'none', color: 'inherit', marginLeft: '15px' }}><Logo /></Link>
+                        <Link to='/' style={{ textDecoration: 'none', color: 'inherit', marginLeft: '13px' }}><Logo /></Link>
                         <IconButton onClick={toggleDrawer} className={classes.closeButton}>
                             <CloseIcon className={classes.toggleButton} />
                         </IconButton>
                     </div>
                     <Divider />
-                    <List >
+                    <List className={classes.list}>
                         <ListItem button component='a'>
                             <ListItemText primary='Home' />
                         </ListItem>

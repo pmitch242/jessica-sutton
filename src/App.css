@@ -7,6 +7,11 @@
   font-family: 'Noto Serif', serif;
 }
 
+.no-ul{
+  list-style: none;
+  padding: 0;
+}
+
 .app{
   overflow-x: hidden;
   background-color: #f9f9f9;

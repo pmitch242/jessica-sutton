@@ -1,0 +1,11 @@
+#services-header{
+    padding-top: 60px;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+
+}
+
+#services-header .services-list{
+    text-align: right;
+}

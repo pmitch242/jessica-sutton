@@ -1,6 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core';
-import PageHeader from '../PageHeader';
+import ServicesHeader from './ServicesHeader';
 
 import './services.css'
 
@@ -15,7 +15,7 @@ const Services = () => {
 
     return (
         <div id='services' className={classes.root}>
-            <PageHeader name='Sevices Page'/>
+            <ServicesHeader name='Sevices Page'/>
         </div>
     )
 }

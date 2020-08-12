@@ -33,6 +33,11 @@
 }
 
 @media only screen and (min-width: 600px) {
+  /* Navbar */
+  .navbar{
+    background-color: transparent;
+  }
+
   /* Home */
   .intro-title{
     text-align: left;

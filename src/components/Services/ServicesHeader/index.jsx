@@ -1,10 +1,16 @@
 import React from 'react'
-import { Container, makeStyles } from '@material-ui/core'
+import { Container, Divider, makeStyles } from '@material-ui/core'
 
-import './page-header.css';
+// import './page-header.css';
 
 const useStyles = makeStyles({
-    button: {},
+    divider: {
+        height: '2px',
+        backgroundColor: '#001639',
+        width: '40%',
+        margin: 'auto',
+        borderRadius: '20px',
+    },
 })
 
 const Header = (props) => {
@@ -12,10 +18,11 @@ const Header = (props) => {
 
     return (
         <div id='services-header'>
-            <div id='background'>
+            <div id='services-header-background'>
                 <Container>
                     <div id='decription-container'>
                         <h1>Practice Areas</h1>
+                        <Divider className={classes.divider}/>
                         <p>
                             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed.
                             Lorem ipsum dolor sit amet, consetetur sadipscing.
@@ -31,7 +38,7 @@ const Header = (props) => {
                         </ul>
                     </div>
                 </Container>
-                <div id='circle-backgroun'/>
+                <div className='circle-background' />
             </div>
         </div>
     )

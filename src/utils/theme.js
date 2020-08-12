@@ -24,7 +24,7 @@ const theme = createMuiTheme({
         letterSpacing: '2px',
         marginBottom: '12px',
             '@media (min-width:600px)': {
-                fontSize: '3.5rem',
+                fontSize: '3.25rem',
                 lineHeight: '60px',
                 textAlign: 'left',
                 letterSpacing: '1px',

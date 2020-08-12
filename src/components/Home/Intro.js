@@ -16,9 +16,10 @@ const useStyle = makeStyles({
         fontSize: '1.15rem',
         letterSpacing: '2px',
         fontWeight: 'bold',
+        textTransform: 'capitalize',
         '@media (min-width:600px)': {
             marginTop: '50px',
-            width: '50%'
+            width: '40%'
         }
 
     },

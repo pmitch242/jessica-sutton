@@ -34,7 +34,7 @@ const useStyles = makeStyles({
         padding: '0px',
         position: 'fixed',
         right: '0',
-        marginRight: '15px',
+        marginRight: '13px',
     },
     toggleButton: {
         color: '#d89736',
@@ -71,7 +71,7 @@ const Navbar = () => {
     return (
 
         <Box fontFamily='fontFamily' className={`navbar ${classes.root}`} >
-            <Link to='/' style={{ textDecoration: 'none', color: 'inherit' }}><Logo /></Link>
+            <Link to='/' style={{ textDecoration: 'none', color: 'inherit', marginLeft: '13px'}}><Logo /></Link>
 
             <Hidden xsDown>
                 <div className='navlinks'>

@@ -52,7 +52,7 @@ const useStyles = makeStyles({
         paddingLeft: '30px',
     },
     closeButton: {
-        padding: '0 7px',
+        padding: '0 13px',
     },
 });
 

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import { Hidden, IconButton, Drawer, ListItem, List, ListItemText, makeStyles, Divider, Collapse, Box } from '@material-ui/core';
 
 import MenuIcon from '@material-ui/icons/Menu';
@@ -66,7 +66,7 @@ const Navbar = () => {
     return (
 
         <Box fontFamily='fontFamily' className={`navbar ${classes.root}`} >
-            <Logo />
+            <Link to='/' style={{textDecoration: 'none', color: 'inherit'}}><Logo /></Link>
 
             <Hidden xsDown>
                 <div className='navlinks'>

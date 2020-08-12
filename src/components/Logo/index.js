@@ -5,7 +5,7 @@ import CourtIcon from '@material-ui/icons/AccountBalanceOutlined';
 
 const useStyle = makeStyles({
     h3: {
-        fontSize: '2.25rem',
+        fontSize: '2rem',
         fontFamily: `'Noto Serif', serif`,
         margin: 0,
         lineHeight: 1

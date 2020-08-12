@@ -14,10 +14,7 @@ import './nav.css';
 
 // styles
 const useStyles = makeStyles({
-    root: {
-        position: 'sticky',
-        top: 0
-    },
+    root: {},
     menuContainer: {
         width: '100vw',
         height: '100%',
@@ -25,10 +22,19 @@ const useStyles = makeStyles({
         backgroundColor: '#001639',
     },
     menuHeader: {
+        display: 'flex',
+        justifyContent: 'space-between',
+        alignItems: 'center',
         backgroundColor: 'inherit',
         color: '#e9e9e9',
-        padding: '0',
+        padding: '10px 0',
 
+    },
+    menuButton: {
+        padding: '0px',
+        position: 'fixed',
+        right: '0',
+        marginRight: '15px',
     },
     toggleButton: {
         color: '#d89736',
@@ -43,8 +49,7 @@ const useStyles = makeStyles({
         paddingLeft: '30px',
     },
     closeButton: {
-        paddingLeft: '0',
-        paddingRight: '0',
+        padding: '0 7px',
     },
 });
 
@@ -66,7 +71,7 @@ const Navbar = () => {
     return (
 
         <Box fontFamily='fontFamily' className={`navbar ${classes.root}`} >
-            <Link to='/' style={{textDecoration: 'none', color: 'inherit'}}><Logo /></Link>
+            <Link to='/' style={{ textDecoration: 'none', color: 'inherit' }}><Logo /></Link>
 
             <Hidden xsDown>
                 <div className='navlinks'>
@@ -83,7 +88,7 @@ const Navbar = () => {
             </Hidden>
 
             <Hidden smUp>
-                <IconButton onClick={toggleDrawer} style={{ padding: '0' }}>
+                <IconButton onClick={toggleDrawer} className={classes.menuButton}>
                     <MenuIcon className={classes.toggleButton} />
                 </IconButton>
             </Hidden>
@@ -94,7 +99,7 @@ const Navbar = () => {
             >
                 <div className={classes.menuContainer}>
                     <div className={`navbar ${classes.menuHeader}`}>
-                        <Logo />
+                        <Link to='/' style={{ textDecoration: 'none', color: 'inherit', marginLeft: '15px' }}><Logo /></Link>
                         <IconButton onClick={toggleDrawer} className={classes.closeButton}>
                             <CloseIcon className={classes.toggleButton} />
                         </IconButton>

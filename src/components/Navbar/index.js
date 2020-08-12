@@ -80,7 +80,7 @@ const Navbar = () => {
                 <div className='navlinks'>
                     <NavLink exact to='/'>Home</NavLink>
                     <NavLink exact to='/about'>About</NavLink>
-                    <NavLink to='/services'>Services</NavLink>
+                    <NavLink exact to='/services'>Services</NavLink>
                     <NavLink exact to='/news'>News</NavLink>
                     <NavLink exact to='/contact'>Contact</NavLink>
                 </div>
@@ -109,36 +109,54 @@ const Navbar = () => {
                     </div>
                     <Divider />
                     <List className={classes.list}>
-                        <ListItem button component='a'>
-                            <ListItemText primary='Home' />
+                        <ListItem button component={NavLink} to='/' onClick={toggleDrawer} className={classes.drawerNav}>
+                            <ListItemText primary='Home'/>
                         </ListItem>
-                        <ListItem button component='a'>
+                        <ListItem button component={NavLink} to='/about' onClick={toggleDrawer}>
                             <ListItemText primary='About' />
                         </ListItem>
                         <ListItem button onClick={toggleCollapse}>
-                            <ListItemText primary="Services" />
+                            <ListItemText primary='Services' />
                             {openServices ? <ExpandMore /> : <ChevronRight />}
                         </ListItem>
                         <Collapse in={openServices} timeout="auto" unmountOnExit>
                             <List component="div" disablePadding>
-                                <ListItem button className={classes.nested}>
-                                    <ListItemText primary="Direct Representation" />
+                                <ListItem
+                                    button
+                                    className={classes.nested}
+                                    component={NavLink}
+                                    to='/services'
+                                    onClick={toggleDrawer}
+                                >
+                                    <ListItemText primary='Direct Representation' />
                                 </ListItem>
-                                <ListItem button className={classes.nested}>
-                                    <ListItemText primary="Consulting" />
+                                <ListItem
+                                    button
+                                    className={classes.nested}
+                                    component={NavLink}
+                                    to='/services'
+                                    onClick={toggleDrawer}
+                                >
+                                    <ListItemText primary='Consulting' />
                                 </ListItem>
-                                <ListItem button className={classes.nested}>
-                                    <ListItemText primary="Training" />
+                                <ListItem
+                                    button
+                                    className={classes.nested}
+                                    component={NavLink}
+                                    to='/services'
+                                    onClick={toggleDrawer}
+                                >
+                                    <ListItemText primary='Training' />
                                 </ListItem>
                             </List>
                         </Collapse>
-                        <ListItem button component='a'>
+                        <ListItem button component={NavLink} to='/news' onClick={toggleDrawer}>
                             <ListItemText primary='News' />
                         </ListItem>
-                        <ListItem button component='a'>
+                        <ListItem button component={NavLink} to='/opportunities' onClick={toggleDrawer}>
                             <ListItemText primary='Join The Team' />
                         </ListItem>
-                        <ListItem button component='a'>
+                        <ListItem button component={NavLink} to='/contact' onClick={toggleDrawer}>
                             <ListItemText primary='Contact' />
                         </ListItem>
                     </List>

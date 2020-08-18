@@ -64,5 +64,5 @@
     right: 40px;
     min-width: 800px;
     min-height: 800px;
-    background: linear-gradient(150deg, rgba(216,151,60,0.8) -35%, rgba(0,22,57,0.8) 30%);
+    background: linear-gradient(150deg, rgba(216,151,60,0.8) -35%, rgba(0,22,57,0.95) 35%);
 }

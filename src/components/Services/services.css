@@ -1,25 +1,23 @@
 #services{
     width: 100vw;
-    height: 100vh;
-    background-image: url(./ServicesHeader/courthouse.jpg);
-    background-repeat: no-repeat;
-    background-size: 710px;
-    background-position: 50% -475px;
-    background-color: rgb(0, 22, 57, 25%);
     font-family: 'Noto Sans TC', sans-serif;
 }
 
 #services-header{
     width: 100vw;
     height: 100vh;
+    background-image: url(/static/media/courthouse.e8cd651e.jpg);
+    background-repeat: no-repeat;
+    background-size: 575px;
+    background-position: 50% -270px;
     text-align: center;
     color: #E6E7E8;
-    background-color: rgb(216, 151, 60, 0.8);
 }
 
 #services-header #services-header-background{
     overflow: hidden;
     height: 100vh;
+    background-color: rgb(216, 151, 60, 0.8);
 }
 
 #services-header #decription-container{
@@ -64,5 +62,4 @@
     right: 40px;
     min-width: 800px;
     min-height: 800px;
-    background: linear-gradient(170deg, rgba(0,22,57,0.4) -35%, rgba(0,22,57,0.95) 29%);
-}
+    background: linear-gradient(150deg, rgba(0,22,57,0.5) -35%, rgba(0,22,57,1) 29%);}

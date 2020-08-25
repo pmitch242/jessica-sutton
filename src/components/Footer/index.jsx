@@ -1,7 +1,8 @@
 import React from 'react'
+import { Container } from '@material-ui/core';
+
 
 import './footer.css';
-import { Container } from '@material-ui/core';
 
 const Footer = () => {
     return (

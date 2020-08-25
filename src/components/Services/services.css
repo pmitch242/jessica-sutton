@@ -123,7 +123,7 @@
 }
 
 .consultation-image{
-    background-image: url(/static/media/consultation-image.aeec7038.jpg);
+    background-image: url(./images/consultation-image.jpg);
     background-size: cover;
 }
 

@@ -141,10 +141,13 @@
 .card-details .service-card-list li {
     color: #d8973c;
     margin-bottom: 10px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
 }
 
 .card-details .service-card-list li span {
     color: #001639;
     margin-left: -9px;
 }
+
 

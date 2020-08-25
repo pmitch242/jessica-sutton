@@ -12,14 +12,14 @@ const useStyle = makeStyles({
     },
     h2: {
         marginBottom: '10px',
-
+        textAlign: 'center',
     },
     h3: {
         marginBottom: '5px',
 
     },
     divider: {
-        marginBottom: '30px',
+        margin: 'auto auto 30px',
         maxWidth: '250px',
         height: '3px',
         backgroundColor: '#d8973c',
@@ -52,7 +52,7 @@ const Contact = () => {
     return (
         <div id='about' className={classes.root}>
             <Container >
-                <Typography variant='h2' color='primary' className={classes.h2}>Get Free Consultation</Typography>
+                <Typography variant='h2' color='primary' className={classes.h2}>Let's Talk!</Typography>
 
                 <Divider className={classes.divider} />
 

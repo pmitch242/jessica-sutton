@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/core';
 
 import ServicesHeader from './ServicesHeader';
 import Service from './Service';
+import Contact from '../Contact';
 
 import './services.css'
 
@@ -34,14 +35,14 @@ const servicesList = [
         name: 'training',
         paragraph: `Jessica Sutton regularly teaches as faculty at regional and national conferences. Ms. Sutton also provides training to law firms and federal and state defender organizations. In addition to the topics above, Ms. Sutton offers broad training on the development, presentation, and litigation of certain types of cases, such as compassionate release, parole, and juvenile re-sentencings. Ms. Sutton's trainings are tailor-made to fit the needs of each client and range from hands-on exercises to informational presentations.`,
         list: [
-            'Litigating CoVid-19 Issues',
-            'Investigating Brain Dysfunction and Cognitive Disorders',
-            'Trauma, Mental Health Issues, and Working with Experts',
-            'Using Social Media to Conduct Investigations',
-            'Conducting Effective Witness Interviews',
-            'Developing Mitigation Themes and Theories',
-            'Building and Managing Client Relationships',
-            'Introduction to Case Management ',
+            'Litigating COVID-19 issues',
+            'Investigating brain dysfunction and cognitive disorders',
+            'Trauma, mental health issues, and working with experts',
+            'Using social media to conduct investigations',
+            'Conducting effective witness interviews',
+            'Developing mitigation themes and theories',
+            'Building and managing client relationships',
+            'Introduction to case management ',
         ],
     },
 ];
@@ -54,8 +55,11 @@ const Services = () => {
             {/* Header */}
             <ServicesHeader name='Sevices Page' />
 
-            {/* Service */}
+            {/* List of service */}
             <Service servicesList={servicesList}/>
+
+            {/* Contact */}
+            <Contact />
         </div>
     )
 }

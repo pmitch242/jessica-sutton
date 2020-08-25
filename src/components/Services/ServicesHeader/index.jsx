@@ -6,6 +6,7 @@ import { Container, Divider, makeStyles } from '@material-ui/core'
 const useStyles = makeStyles({
     divider: {
         height: '1px',
+        width: '50%',
         backgroundColor: '#001639',
         margin: 'auto',
         borderRadius: '20px',

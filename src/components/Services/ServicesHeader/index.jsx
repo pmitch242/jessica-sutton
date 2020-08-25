@@ -5,9 +5,8 @@ import { Container, Divider, makeStyles } from '@material-ui/core'
 
 const useStyles = makeStyles({
     divider: {
-        height: '2px',
+        height: '1px',
         backgroundColor: '#001639',
-        width: '40%',
         margin: 'auto',
         borderRadius: '20px',
     },
@@ -21,7 +20,7 @@ const Header = (props) => {
             <div id='services-header-background'>
                 <Container>
                     <div id='decription-container'>
-                        <h1>Practice Areas</h1>
+                        <h1>Services</h1>
                         <Divider className={classes.divider}/>
                         <p>
                             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed.

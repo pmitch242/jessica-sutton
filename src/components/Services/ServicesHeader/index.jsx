@@ -26,7 +26,7 @@ const Header = (props) => {
                         <p>
                             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed.
                             Lorem ipsum dolor sit amet, consetetur sadipscing.
-                    </p>
+                        </p>
 
                     </div>
                     <div className="services-btn-container">

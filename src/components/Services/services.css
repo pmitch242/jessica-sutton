@@ -1,7 +1,7 @@
 #services{
     width: 100vw;
     font-family: 'Noto Sans TC', sans-serif;
-    background-color: #001639;
+    background-color: #f9f9f9;
 }
 
 #services-header{
@@ -67,7 +67,7 @@
     background: linear-gradient(150deg, rgba(0,22,57,0.5) -35%, rgba(0,22,57,1) 29%);
 }
 
-#consultation-section{
+/* #consultation-section{
     background-image: url(/static/media/consultation-image.aeec7038.jpg);
     background-size: cover;
     background-position-x: 30%;
@@ -77,22 +77,21 @@
     background-image: url(./images/training-image.jpg);
     background-size: cover;
     background-position-x: center;
-}
+} */
 
 #service-section{
     padding-top: 1px;
-    padding-bottom: 60px;
-    background-color: rgba(0,22,57, 0.85);
-    color: #ffffff;
+    color: #001639;
 }
 
-#training-section #service-section{
+/* #training-section #service-section{
     background-color: rgba(0,22,57, 0.9);
-}
+} */
 
 #service-section .card-details{
     padding-top: 16px;
-    padding-bottom: 16px;
+    padding-bottom: 20px;
+    color: #001639;
 }
 
 #service-section h1{
@@ -104,4 +103,48 @@
 }
 
 #service-section h2{
+    margin-bottom: 20px;
+    font-size: 1.75rem;
+    margin: 10px auto;
+    font-family: 'Noto Serif', serif;
+    color: #d8973c;
 }
+
+#service-section p{
+    line-height: 25px;
+    margin-bottom: 30px;
+}
+
+.service-image-div{
+    content: '';
+    height: 28vh;
+    width: 100%;
+    border-radius: 4px 4px 0 0;
+}
+
+.consultation-image{
+    background-image: url(/static/media/consultation-image.aeec7038.jpg);
+    background-size: cover;
+}
+
+.training-image{
+    background-image: url(./images/training-image.jpg);
+    background-size: cover;
+}
+
+.card-details .service-card-list{
+    margin-block-start: 0;
+    padding: 0;
+    list-style-position: inside;
+}
+
+.card-details .service-card-list li {
+    color: #d8973c;
+    margin-bottom: 10px;
+}
+
+.card-details .service-card-list li span {
+    color: #001639;
+    margin-left: -9px;
+}
+

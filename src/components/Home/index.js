@@ -3,7 +3,6 @@ import { makeStyles, Container } from '@material-ui/core';
 
 import Intro from './Intro';
 import ServiceList from './ServiceList';
-import About from '../About';
 import Contact from '../Contact';
 
 import './home.css';
@@ -24,7 +23,6 @@ const Home = () => {
                 <ServiceList />
             </Container>
 
-            <About />
             {/* <div className='gap'></div> */}
             <Contact />
         </div>

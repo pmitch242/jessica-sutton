@@ -1,8 +1,9 @@
 .header-container{
-    background-image: url(../../images/pillers.jpg);
+    background-image: url(../../images/courthouse.jpg);
     margin-top: 70px;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position-y: center;
 }
 
 .header{

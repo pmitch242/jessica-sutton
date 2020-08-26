@@ -43,7 +43,7 @@
 @media only screen and (min-width: 600px) {
   /* Headrer */
   .header-container {
-    background-position-y: bottom;
+    background-position-y: 59%;
 }
 
   .header {

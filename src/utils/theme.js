@@ -14,13 +14,13 @@ const theme = createMuiTheme({
         },
     },
     typography: {
-        fontFamily: `'Noto Sans TC', sans-serif`,
+        fontFamily: `'Lato', sans-serif`,
         h1: {
-            fontFamily: `'Noto Serif', serif`,
-            fontWeight: 700,
+            fontFamily: `'Roboto', sans-serif`,
+            fontWeight: 500,
             textAlign: 'center',
-            lineHeight: '45px',
-            fontSize: '2.4rem',
+            lineHeight: '40px',
+            fontSize: '2rem',
         letterSpacing: '2px',
         marginBottom: '12px',
             '@media (min-width:600px)': {
@@ -32,13 +32,13 @@ const theme = createMuiTheme({
             }
         },
         h2: {
-            fontFamily: `'Noto Serif', serif`,
+            fontFamily: `'Roboto', sans-serif`,
             fontWeight: 400,
             fontSize: "2rem",
             // color: '#001639'
         },
         h3: {
-            fontFamily: `'Noto Serif', serif`,
+            fontFamily: `'Roboto', sans-serif`,
             fontWeight: 400,
             fontSize: "1.5rem",
 
@@ -46,8 +46,8 @@ const theme = createMuiTheme({
         subtitle1: {
             fontWeight: 300,
             fontSize: '1rem',
-            letterSpacing: '1px',
-            lineHeight: 1.5
+            letterSpacing: '2px',
+            lineHeight: '19px'
         },
     }
 });

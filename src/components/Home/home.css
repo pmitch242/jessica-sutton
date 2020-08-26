@@ -4,12 +4,11 @@
     background-color: #3f89ff;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    margin-top: 30px;
 }
 
 .intro-background{
     content: '';
-    height: 100vh;
     width: 100%;
     top: 0;
     left: 0;

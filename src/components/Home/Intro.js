@@ -3,33 +3,42 @@ import { makeStyles, Typography, Button, Container } from '@material-ui/core';
 
 const useStyle = makeStyles({
     container: {
+        display: 'flex',
+        flexDirection: 'column',
         maxWidth: '800px',
         color: '#ffffff',
-        paddingTop: '125px'
+        paddingTop: '165px',
+        paddingBottom: '100px',
+        '@media (min-width:600px)': {
+            paddingTop: '200px',
+            paddingBottom: '150px',
+        }
     },
     button: {
         color: '#f9f9f9',
-        marginTop: '90px',
+        margin: '90px auto 0',
         width: '100%',
-        paddingTop: '10px',
-        paddingBottom: '10px',
+        // paddingTop: '10px',
+        // paddingBottom: '10px',
         fontSize: '1.15rem',
         letterSpacing: '2px',
-        fontWeight: 'bold',
+        fontWeight: '400',
         textTransform: 'capitalize',
         '@media (min-width:600px)': {
-            marginTop: '50px',
-            width: '40%'
+            margin: '50px 0',
+            width: '40%',
+            justifyContent: 'left'
         }
 
     },
     title: {
-        textTransform: 'uppercase',
+        textTransform: 'capitalize',
     },
     subtitile: {
-        color: '#f9f9f9',
+        color: '#ffffff',
         textAlign: 'center',
         fontSize: '1rem',
+        marginTop: '10px',
         '@media (min-width:600px)': {
             marginTop: '0px',
             textAlign: 'left',
@@ -47,19 +56,14 @@ const Intro = () => {
                 <Container>
                     <div className={classes.container} id='intro-info-div'>
                         <Typography variant='h1' className={`${classes.title} intro-title`}>
-                            Protecting Our Rights.
-                    </Typography>
-                        <Typography variant='h1' className={` ${classes.title} intro-title`}>
-                            Fighting for Justice.
-                    </Typography>
-                        <br />
+                            Protecting Our Rights, Fighting for Justice
+                        </Typography>
                         <Typography variant='subtitle1' className={classes.subtitile}>
-                            A specialized law practice providing criminal defense representation, consultation, and training.
-                    </Typography>
-                        <br />
+                            A specialized law practice providing criminal defense representation, consultation, and training
+                        </Typography>
                         <Button variant="contained" color="secondary" className={classes.button}>
                             Request Consultation
-                </Button>
+                        </Button>
                     </div>
                 </Container>
             </div>

@@ -1,9 +1,17 @@
 .header-container{
-    margin-top: 125px;
+    background-image: url(../../images/pillers.jpg);
+    margin-top: 70px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header{
+    padding: 90px 0;
+    background-color: rgba(0, 22, 57, 50%);    color: #ffffff;
 }
 
 .header h1{
-    color: #001639;
-    font-size: 2.5rem;
-    letter-spacing: 1px;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 8px #001639;
 }

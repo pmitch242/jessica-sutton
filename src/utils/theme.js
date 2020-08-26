@@ -44,7 +44,7 @@ const theme = createMuiTheme({
 
         },
         subtitle1: {
-            fontWeight: 300,
+            fontWeight: 400,
             fontSize: '1rem',
             letterSpacing: '2px',
             lineHeight: '19px'

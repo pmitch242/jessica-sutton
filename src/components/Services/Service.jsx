@@ -4,8 +4,11 @@ import { Link } from 'react-router-dom';
 
 const useStyle = makeStyles({
     button: {
-        color: '#001639',
-        width: '100%'
+        color: '#f9f9f9',
+        width: '100%',
+        fontWeight: 'bold',
+        letterSpacing: '1px',
+        fontSize: '1rem',
     }
 })
 
@@ -16,7 +19,7 @@ const Service = ({ servicesList }) => {
     const services = servicesList.map(service =>
         <div id={`service-section`}>
             <Container>
-                <h1 className='h1'>{service.name}</h1>
+                <h1 className={`h1 ${service.name + '-service-h1'}`}>{service.name}</h1>
                 <p>{service.paragraph}</p>
                 
 
@@ -25,7 +28,6 @@ const Service = ({ servicesList }) => {
 
                     <Container>
                         <div className="card-details">
-                            <h2 className='h2'>{service.name} Areas</h2>
                             <ul className='service-card-list'>
                                 {service.list.map(item =>
                                     <li><span>{item}</span></li>

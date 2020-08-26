@@ -9,6 +9,9 @@ const useStyle = makeStyles({
         backgroundColor: '#ffffff',
         borderRadius: '20px',
         padding: '20px'
+    },
+    aboutGrid: {
+        marginTop: '-50px',
     }
 })
 

@@ -48,7 +48,7 @@ const ContactContent = () => {
     const classes = useStyle();
 
     return (
-        <div>
+        <div id='contactContent' style={{padding: '30px 0'}}>
             <Container >
                 <Typography variant='h2' color='primary' className={classes.h2}>Contact</Typography>
 

@@ -44,7 +44,7 @@ const Service = ({ servicesList }) => {
     )
 
     return (
-    <div style={{paddingBottom: '40px'}}>{services}</div>
+    <div>{services}</div>
         
     )
 }

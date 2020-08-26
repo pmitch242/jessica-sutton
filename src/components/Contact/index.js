@@ -14,7 +14,7 @@ const Contact = () => {
     const classes = useStyle();
 
     return (
-        <div id='about' className={classes.root}>
+        <div id='contact' className={classes.root}>
             {/* Header */}
             <Header name='contact' />
 

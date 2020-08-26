@@ -1,22 +1,53 @@
-.about-header .about-intro-div p{
-    font-weight: 300;
+#about-content{
+    margin: 100px auto 20px;
 }
 
-.about-header .contact-info-div .contact-items{
-    margin-bottom: 10px;
-    letter-spacing: 1px;
+#about-content .jess-image-div{
+    margin: auto;
+    width: fit-content;
 }
 
-.about-header .contact-info-div .contact-items p,
-.about-header .contact-info-div .contact-items h3{
-    margin: 0;
+#about-content .jess-image-div h1{
+    text-align: left;
 }
 
-.about-header .contact-info-div .contact-items p{
-    font-weight: 300;
+#about-content .jess-image-div img{
+    width: 100%;
+    max-width: 350px;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
 }
 
-.about-header .contact-info-div .contact-items h3{
-    font-weight: 600;
-    color: #d8973c;
+#about-content .jess-image-div h1{
+    width: fit-content;
+    text-align: left;
+    border-bottom: #d8973c 3px solid;
+    padding-right: 10px;
+    margin: auto 0;
+    font-weight: 500;
+}
+
+#about-content .about-p-div h1{
+    width: fit-content;
+    text-align: left;
+    border-bottom: #d8973c 3px solid;
+    padding-right: 10px;
+    margin: auto 0;
+    display: none;
+}
+
+#about-content .about-p-div{
+    line-height: 23px;
+    font-weight: 500;
+    font-weight: bold;
+    color: #001639;
+}
+
+#about-content .about-p-div h1{
+    width: fit-content;
+    text-align: left;
+    border-bottom: #d8973c 3px solid;
+    padding-right: 10px;
+    margin: auto 0;
+    display: none;
 }

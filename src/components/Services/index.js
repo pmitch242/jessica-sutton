@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core';
 
 import Header from '../Header';
 import Service from './Service';
-import Contact from '../Contact';
+import ContactContent from '../Contact/ContactContent';
 
 import './services.css'
 
@@ -59,7 +59,7 @@ const Services = () => {
             <Service servicesList={servicesList}/>
 
             {/* Contact */}
-            <Contact />
+            <ContactContent />
         </div>
     )
 }

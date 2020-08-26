@@ -2,6 +2,7 @@ import React from 'react';
 // import { makeStyles} from '@material-ui/core';
 
 import Header from '../Header';
+import AboutContent from './AboutContent';
 import ContactContent from '../Contact/ContactContent';
 
 
@@ -22,7 +23,10 @@ const About = () => {
             {/* Header */}
            <Header name='about'/>
 
-           {/* Contact */}
+           {/* About Content */}
+           <AboutContent />
+
+           {/* Contact Content*/}
            <ContactContent />
         </div>
     )

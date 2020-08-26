@@ -74,14 +74,13 @@ const Navbar = () => {
     return (
 
         <Box fontFamily='fontFamily' className={`navbar ${classes.root}`} >
-            <Link to='/' style={{ textDecoration: 'none', color: 'inherit', marginLeft: '13px' }}><Logo /></Link>
+            <Link to='/' style={{ textDecoration: 'none', color: 'inherit', marginLeft: '13px', width: '25%', }}><Logo /></Link>
 
             <Hidden xsDown>
                 <div className='navlinks'>
                     <NavLink exact to='/'>Home</NavLink>
                     <NavLink exact to='/about'>About</NavLink>
                     <NavLink exact to='/services'>Services</NavLink>
-                    <NavLink exact to='/news'>News</NavLink>
                     <NavLink exact to='/contact'>Contact</NavLink>
                 </div>
                 <div className='nav-contact'>

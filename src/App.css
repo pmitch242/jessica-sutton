@@ -47,8 +47,22 @@
   }
 
   /* Home */
+  #intro{
+    background-position-y: 0;
+  }
+
   .intro-title{
     text-align: left;
   }
+
+  /* Header Component */
+  .header-container {
+    background-position-y: 68%;
+  }
+
+  .header .intro-div h1 {
+    font-size: 3.25rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;  }
 }
 

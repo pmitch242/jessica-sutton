@@ -23,6 +23,7 @@
 
 .navbar .navlinks a.active{
     border-bottom: #d8973c 2px solid;
+    color: #ffffff;
 }
 
 .navbar .navlinks a.active:hover{
@@ -38,7 +39,9 @@
     display: flex;
     flex-direction: column;
     align-content: center;
-    margin-right: 13px;
+    margin-right: px;
+    width: 25%;
+    margin-right: 33px;
 }
 
 .navbar .nav-contact span{

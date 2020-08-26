@@ -1,8 +1,7 @@
 import React from 'react';
 import { makeStyles} from '@material-ui/core';
 
-import Header from './Header';
-// import CountingNumbers from './CountingNumbers';
+import Header from '../Header';
 
 // import jess from './jessica.png';
 // import jess from './jessica-image.png';
@@ -18,7 +17,7 @@ const About = () => {
 
     return (
         <div id='about' className={classes.root}>
-           <Header />
+           <Header name='about'/>
         </div>
     )
 }

@@ -1,33 +1,3 @@
-.about-header-container{
-    background-image: url(./header-image.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-x: 15%;
-}
-
-.about-header{
-    min-height: 100vh;
-    padding-top: 1px;
-    /* color: #001639; */
-    /* background-color: rgb(216 151 60 / 60%); */
-    color: #e9e9e9;
-    background-color: rgb(0 22 57 / 60%);
-    text-align: center;
-    letter-spacing: 1px;
-    font-family: 'Noto Sans TC', sans-serif;
-}
-
-.about-header .about-intro-div h1{
-    letter-spacing: 2px;
-    line-height: 40px;
-}
-
-.about-header .about-intro-div h1 span{
-    color: #d8973c;
-    font-size: 2.5rem;
-    letter-spacing: 3px;
-}
-
 .about-header .about-intro-div p{
     font-weight: 300;
 }
@@ -49,13 +19,4 @@
 .about-header .contact-info-div .contact-items h3{
     font-weight: 600;
     color: #d8973c;
-}
-
-.about-header .about-image-div{
-    position: relative;
-    top: -15px;
-}
-
-.about-header .about-image-div .jessica-photo{
-    max-width: 275px;
 }

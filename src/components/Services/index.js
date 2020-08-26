@@ -1,7 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core';
 
-import ServicesHeader from './ServicesHeader';
+import Header from '../Header';
 import Service from './Service';
 import Contact from '../Contact';
 
@@ -53,7 +53,7 @@ const Services = () => {
     return (
         <div id='services' className={classes.root}>
             {/* Header */}
-            <ServicesHeader name='Sevices Page' />
+            <Header name='services' />
 
             {/* List of service */}
             <Service servicesList={servicesList}/>

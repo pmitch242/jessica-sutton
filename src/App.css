@@ -56,40 +56,6 @@
   }
 
   /* Header Component */
-  .header-container{
-    min-height: 350px;
-  }
 
-  .header-container .header-bg {
-    min-height: 350px;
-    background-position-y: 68%;
-    filter: blur(0);
-  }
-
-  .header{
-    min-height: 350px;
-    background-color: rgba(0, 22, 57, 95%);
-  }
-
-  .header .intro-div h1 {
-    font-size: 5rem;
-    text-transform: uppercase;
-    letter-spacing: 8px;
-    padding-top: 2%;
-  }
-
-  .header-text-bg{
-    display: block;
-    letter-spacing: 2px;
-    min-height: 350px;
-  }
-
-  .header-text-bg h1{
-    font-size: 10rem;
-    text-transform: uppercase;
-    letter-spacing: 10px;
-    padding-top: 13%;
-    opacity: 65%;
-  }
 }
 

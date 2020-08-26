@@ -1,6 +1,7 @@
 import React from 'react';
 import { makeStyles, Typography, Container, Divider, Grid } from '@material-ui/core';
 
+import Header from '../Header';
 import ContactForm from './ContactForm';
 
 import Logo from '../Logo'
@@ -8,7 +9,6 @@ import Logo from '../Logo'
 const useStyle = makeStyles({
     root: {
         backgroundColor: '#e9e9e9',
-        padding: '90px 0'
     },
     h2: {
         marginBottom: '10px',
@@ -51,6 +51,7 @@ const Contact = () => {
 
     return (
         <div id='about' className={classes.root}>
+            <Header name='contact' />
             <Container >
                 <Typography variant='h2' color='primary' className={classes.h2}>Let's Talk!</Typography>
 

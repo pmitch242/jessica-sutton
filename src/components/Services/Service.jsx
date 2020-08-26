@@ -9,6 +9,7 @@ const useStyle = makeStyles({
         fontWeight: 'bold',
         letterSpacing: '1px',
         fontSize: '1rem',
+        marginTop: '10px'
     }
 })
 

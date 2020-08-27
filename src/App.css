@@ -135,6 +135,12 @@ p{
     display: flex;
   }
 
+  #home #about-content {
+    padding-top: 60px;
+    margin-top: 45px;
+    padding-bottom: 0px;
+}
+
   /* About */
   #about #about-content{
     background-color: #ffffff;

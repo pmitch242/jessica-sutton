@@ -146,8 +146,8 @@
     cursor: default;
 }
 
-.gap{
-    height: 30vh;
-    width: 100vw;
+#home #about-content{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #ffffff;
 }
-

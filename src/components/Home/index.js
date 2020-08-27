@@ -3,6 +3,7 @@ import { makeStyles, Container } from '@material-ui/core';
 
 import Intro from './Intro';
 import Title from '../Title';
+import AboutContent from '../About/AboutContent';
 import ServiceList from './ServiceList';
 import ContactContent from '../Contact/ContactContent';
 
@@ -33,7 +34,10 @@ const Home = () => {
                 <ServiceList />
             </Container>
 
-            {/* <div className='gap'></div> */}
+            {/* About Section */}
+            <AboutContent />
+
+            {/* Contact Section*/}
             <ContactContent />
         </div>
     )

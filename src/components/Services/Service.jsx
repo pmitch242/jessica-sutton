@@ -1,6 +1,8 @@
 import React from 'react';
-import { makeStyles, Button, Container, Paper, Grid } from '@material-ui/core';
+import { makeStyles, Button, Container, Paper, Grid, Divider } from '@material-ui/core';
 import { Link } from 'react-router-dom';
+
+import Title from '../Title';
 
 const useStyle = makeStyles({
     button: {
@@ -10,6 +12,9 @@ const useStyle = makeStyles({
         letterSpacing: '1px',
         fontSize: '1rem',
         marginTop: '10px'
+    },
+    divider: {
+        margin: '50px auto'
     }
 })
 
@@ -18,13 +23,18 @@ const Service = ({ servicesList }) => {
     const classes = useStyle();
 
     const services = servicesList.map(service =>
-        <div id={`service-section`}>
+        <div id={`service-section`} key={service.name}>
             <Container>
+                <div className="title-div">
+                    <Title name={service.name} />
+                    <h6 className="h6">How we can help</h6>
+                    <p className="p">{service.summary}</p>
+                </div>
                 <Grid container spacing={0}>
                     <Grid item xs={12} sm={7}>
                         <div className={`service-image-div ${service.name + '-image'}`} />
                     </Grid>
-                    <Grid itemxs={12} sm={5}>
+                    <Grid item xs={12} sm={5}>
                         <Paper>
                             <Container>
                                 <div className="card-details">
@@ -42,6 +52,8 @@ const Service = ({ servicesList }) => {
                     </Grid>
                 </Grid>
             </Container>
+            
+            <Divider className={classes.divider}/>
         </div>
     )
 

@@ -16,7 +16,7 @@ const ServiceCard = (props) => {
         <Link to='/services'>
             <div className={props.name + '-service-card'}>
                 <div className='service-card'>
-                    <h1 className='h1'>{props.title}</h1>
+                    <h3 className='h3'>{props.title}</h3>
                     <Divider className={classes.divider} />
                     <span>Learn More</span>
                 </div>

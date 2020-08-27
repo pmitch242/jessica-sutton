@@ -18,7 +18,7 @@
 
 /* Services Section */
 #services-section{
-    padding-top: 80px;
+    margin-top: 40px;
 }
 
 #services-list a {
@@ -61,10 +61,10 @@
     height: 230px;
     padding: 0 25px;
     border-radius: 15px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
-.consult-service-card h1{
+.consult-service-card h3{
     letter-spacing: 3px;
 }
 
@@ -80,13 +80,13 @@
     background-color: rgb(0, 22, 57, 0.85);
 }
 
-.direct-rep-service-card .service-card .h1{
+.direct-rep-service-card .service-card .h3{
     letter-spacing: 0px;
     margin-top: 9px;
 }
 
-.training-service-card .service-card .h1,
-.mentor-service-card .service-card .h1{
+.training-service-card .service-card .h3,
+.mentor-service-card .service-card .h3{
     letter-spacing: 2px;
 }
 

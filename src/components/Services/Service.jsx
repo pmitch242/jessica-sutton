@@ -15,6 +15,9 @@ const useStyle = makeStyles({
     },
     divider: {
         margin: '50px auto'
+    },
+    paper: {
+        borderRadius: '0 4px 4px 0',
     }
 })
 
@@ -36,7 +39,7 @@ const Service = ({ servicesList }) => {
                         <div className={`service-image-div ${service.name + '-image'}`} />
                     </Grid>
                     <Grid item xs={12} sm={5}>
-                        <Paper>
+                        <Paper className={classes.paper} elevation={0}>
                             <Container>
                                 <div className="card-details">
                                     <ul className='service-card-list'>

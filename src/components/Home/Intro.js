@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 import { makeStyles, Typography, Button, Container } from '@material-ui/core';
 
 const useStyle = makeStyles({
@@ -64,9 +65,11 @@ const Intro = () => {
                         <Typography variant='subtitle1' className={classes.subtitile}>
                             A specialized law practice providing criminal defense representation, consultation, and training.
                         </Typography>
-                        <Button variant="contained" color="secondary" className={classes.button}>
-                            Request Consultation
+                        <Link to='/contact' className='no-a'>
+                            <Button variant="contained" color="secondary" className={classes.button}>
+                                Request Consultation
                         </Button>
+                        </Link>
                     </div>
                 </Container>
             </div>

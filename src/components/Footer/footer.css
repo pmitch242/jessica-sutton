@@ -1,7 +1,11 @@
 #footer{
-    padding-top: 10px;
+    padding: 25px 0;
     background-color: #001639;
     width: 100vw;
-    height: 60vh;
     color: #f9f9f9;
+    text-align: center;
+}
+
+#footer h3{
+    font-weight: 500;
 }

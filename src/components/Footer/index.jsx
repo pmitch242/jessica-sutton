@@ -8,7 +8,7 @@ const Footer = () => {
     return (
         <div id='footer'>
             <Container>
-                <h1>This is the footer</h1>
+                <h3>&copy; Copyright 2020, JE Sutton LLC</h3>
             </Container>
         </div>
     )

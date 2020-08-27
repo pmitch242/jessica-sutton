@@ -209,5 +209,15 @@ p{
     letter-spacing: 0;
   }
 
+  /* Contact */
+  #contactContent {
+    max-width: 60%;
+  }
+
+  .contact-submit-btn-div {
+    width: 50%;
+    margin: auto;
+}
+
 }
 

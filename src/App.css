@@ -52,7 +52,7 @@ p{
     padding: 10px 0px;
   }
 
-  /* Headrer */
+  /* Header Component */
   .header-container {
     background-position-y: bottom;
 }
@@ -69,6 +69,10 @@ p{
   /* Home */
   #intro{
     background-position-y: 0;
+  }
+
+  .intro-background{
+    background: linear-gradient(90deg, rgba(0,22,57,100%) 8%, rgba(0,22,57, 40%) 78%);
   }
 
   .intro-title{

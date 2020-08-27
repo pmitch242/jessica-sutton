@@ -105,7 +105,7 @@ const Navbar = () => {
             >
                 <div className={classes.menuContainer}>
                     <div className={`navbar ${classes.menuHeader}`}>
-                        <Link to='/' style={{ textDecoration: 'none', color: 'inherit', marginLeft: '13px' }}><Logo /></Link>
+                        <Link onClick={toggleDrawer} to='/' style={{ textDecoration: 'none', color: 'inherit', marginLeft: '13px' }}><Logo /></Link>
                         <IconButton onClick={toggleDrawer} className={classes.closeButton}>
                             <CloseIcon className={classes.toggleButton} />
                         </IconButton>

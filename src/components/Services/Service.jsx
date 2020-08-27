@@ -28,7 +28,8 @@ const Service = ({ servicesList }) => {
                 <div className="title-div">
                     <Title name={service.name} />
                     <h6 className="h6">How we can help</h6>
-                    <p className="p">{service.summary}</p>
+                    <p className="p summary">{service.summary}</p>
+                    <p className="p paragraph">{service.paragraph}</p>
                 </div>
                 <Grid container spacing={0}>
                     <Grid item xs={12} sm={7}>
@@ -38,8 +39,6 @@ const Service = ({ servicesList }) => {
                         <Paper>
                             <Container>
                                 <div className="card-details">
-                                    <p>{service.paragraph}</p>
-
                                     <ul className='service-card-list'>
                                         {service.list.map(item =>
                                             <li key={item}><span>{item}</span></li>
@@ -52,8 +51,8 @@ const Service = ({ servicesList }) => {
                     </Grid>
                 </Grid>
             </Container>
-            
-            <Divider className={classes.divider}/>
+
+            <Divider className={classes.divider} />
         </div>
     )
 

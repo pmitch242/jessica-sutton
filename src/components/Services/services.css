@@ -17,6 +17,10 @@
     margin-bottom: 15px;
 }
 
+#service-section .title-div .paragraph{
+    display: none;
+}
+
 #service-section .card-details{
     padding: 35px 0;
 }
@@ -36,10 +40,6 @@
 .training-image{
     background-image: url(./images/training-image.jpg);
     background-size: cover;
-}
-
-.card-details p{
-    display: none;
 }
 
 .card-details .service-card-list{

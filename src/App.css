@@ -106,7 +106,7 @@ p{
     letter-spacing: 1px;
 }
 
-  /* Home */
+  /* Home Page*/
   #intro{
     background-position-y: 0;
   }
@@ -154,7 +154,7 @@ p{
   text-align: left;
 }
 
-  /* About */
+  /* About Page*/
   #about #about-content{
     background-color: #ffffff;
     padding-top: 90px;
@@ -176,6 +176,29 @@ p{
   #about-content .about-p-div{
     margin-top: -0;
   }
+
+  /* Services Page */
+  #service-section .title-div {
+    text-align: center;
+    max-width: 60%;
+    margin: 0 auto 40px;
+}
+
+#service-section .title-div #title{
+  text-align: center;
+}
+
+  #service-section .title-div .summary{
+  display: none;
+  }
+
+  #service-section .title-div .paragraph{
+    display: block;
+}
+.service-image-div {
+  height: 100%;
+  border-radius: 4px 0 0 4px;
+}
 
 }
 

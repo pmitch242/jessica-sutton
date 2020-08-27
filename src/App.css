@@ -103,6 +103,10 @@ p{
     margin-bottom: 0px;
   }
 
+  .service-card span {
+    opacity: 0;
+  }
+
   /* About */
   #about-content .jess-image-div h1 {
     font-weight: 400;

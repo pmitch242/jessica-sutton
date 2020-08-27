@@ -5,7 +5,7 @@ import Title from '../Title';
 
 import jessImage from './jessica.png'
 
-const AboutContent = () => {
+const AboutContent = ({barMargin}) => {
     return (
         <div id='about-content'>
             <Container>
@@ -16,7 +16,7 @@ const AboutContent = () => {
                                     <h3 className='h3'>Meet</h3>
                                     <h2 className='h2'>Jessica Sutton</h2>
                                 </div> */}
-                                <Title name='Jessica Sutton' margin='auto auto 5px'/>
+                                <Title name='Jessica Sutton' barMargin='auto 0 5px'/>
                                 <img src={jessImage} alt="Jessica Sutton" />
                             </div> 
                         </Grid>

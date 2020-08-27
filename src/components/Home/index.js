@@ -22,7 +22,7 @@ const Home = () => {
 
             {/* Sevices Section */}
             <Container id='services-section'>
-                <Title name='Our Services' margin='auto 0 5px'/>
+                <Title name='Our Services' barMargin='auto 0 5px'/>
 
                 {/* Services info section */}
                 <div id='services-info-section'>
@@ -35,7 +35,7 @@ const Home = () => {
             </Container>
 
             {/* About Section */}
-            <AboutContent />
+            <AboutContent barMargin='auto 0 5px'/>
 
             {/* Contact Section*/}
             <ContactContent />

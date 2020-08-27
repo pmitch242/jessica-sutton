@@ -150,6 +150,10 @@ p{
     padding-bottom: 0px;
 }
 
+#home #about-content .jess-image-div #title {
+  text-align: left;
+}
+
   /* About */
   #about #about-content{
     background-color: #ffffff;
@@ -158,7 +162,7 @@ p{
   }
 
   #about-content .jess-image-div{
-    top: -12px;
+    top: -25px;
   }
 
   #about-content .jess-image-div h1 {

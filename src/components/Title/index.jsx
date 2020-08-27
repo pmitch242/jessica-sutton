@@ -3,7 +3,7 @@ import { Divider, makeStyles } from '@material-ui/core';
 
 import './title.css';
 
-const Title = ({ name, margin }) => {
+const Title = ({ name, barMargin }) => {
     const useStyle = makeStyles({
         divider: {
             backgroundColor: '#d8973c',
@@ -12,7 +12,7 @@ const Title = ({ name, margin }) => {
             margin: 'auto auto 10px',
             '@media (min-width:600px)': {
                 height: '5px',
-                margin,
+                margin: barMargin
             }
         }
     })

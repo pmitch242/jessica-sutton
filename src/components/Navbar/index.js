@@ -77,7 +77,7 @@ const Navbar = () => {
 
         <Box fontFamily='fontFamily' className={`navbar ${classes.root}`} >
             <Container className={classes.container}>
-                <Link to='/' style={{ textDecoration: 'none', color: 'inherit', width: '25%', }}><Logo /></Link>
+                <Link to='/' className='navbar-logo-link'><Logo /></Link>
 
                 <Hidden xsDown>
                     <div className='navlinks'>

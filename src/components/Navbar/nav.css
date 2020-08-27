@@ -12,6 +12,12 @@
     z-index: 50;
 }
 
+
+.navbar-logo-link{
+    text-decoration: none;
+    color: inherit;
+}
+
 .navbar .navlinks a{
     color: #001639;
     text-decoration: none;

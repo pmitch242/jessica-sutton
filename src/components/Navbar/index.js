@@ -1,12 +1,11 @@
 import React, { useState } from 'react'
 import { NavLink, Link } from 'react-router-dom';
-import { Hidden, IconButton, Drawer, ListItem, List, ListItemText, makeStyles, Divider, Collapse, Box, Container } from '@material-ui/core';
+import { Hidden, IconButton, Drawer, ListItem, List, ListItemText, makeStyles, Divider, Box, Container } from '@material-ui/core';
 
 import MenuIcon from '@material-ui/icons/Menu';
 import CloseIcon from '@material-ui/icons/Close';
 import PhoneIcon from '@material-ui/icons/Phone';
 import EmailIcon from '@material-ui/icons/Email';
-import { ExpandMore, ChevronRight } from '@material-ui/icons'
 
 import Logo from '../Logo';
 
@@ -68,15 +67,11 @@ const Navbar = () => {
     const classes = useStyles();
 
     const [open, setOpen] = useState(false);
-    const [openServices, setopenServices] = useState(false);
 
     const toggleDrawer = () => {
         setOpen(!open)
     }
 
-    const toggleCollapse = () => {
-        setopenServices(!openServices)
-    }
 
     return (
 
@@ -123,11 +118,9 @@ const Navbar = () => {
                         <ListItem button component={NavLink} to='/about' onClick={toggleDrawer}>
                             <ListItemText primary='About' />
                         </ListItem>
-                        <ListItem button onClick={toggleCollapse}>
+                        <ListItem button component={NavLink} to='/services' onClick={toggleDrawer}>
                             <ListItemText primary='Services' />
-                            {openServices ? <ExpandMore /> : <ChevronRight />}
                         </ListItem>
-                        <Collapse in={openServices} timeout="auto" unmountOnExit>
                             <List component="div" disablePadding>
                                 <ListItem
                                     button
@@ -157,13 +150,12 @@ const Navbar = () => {
                                     <ListItemText primary='Training' />
                                 </ListItem>
                             </List>
-                        </Collapse>
-                        <ListItem button component={NavLink} to='/news' onClick={toggleDrawer}>
+                        {/* <ListItem button component={NavLink} to='/news' onClick={toggleDrawer}>
                             <ListItemText primary='News' />
                         </ListItem>
                         <ListItem button component={NavLink} to='/opportunities' onClick={toggleDrawer}>
                             <ListItemText primary='Join The Team' />
-                        </ListItem>
+                        </ListItem> */}
                         <ListItem button component={NavLink} to='/contact' onClick={toggleDrawer}>
                             <ListItemText primary='Contact' />
                         </ListItem>

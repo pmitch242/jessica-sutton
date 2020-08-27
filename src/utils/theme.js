@@ -14,9 +14,9 @@ const theme = createMuiTheme({
         },
     },
     typography: {
-        fontFamily: `'Lato', sans-serif`,
+        fontFamily: `'Open Sans', sans-serif`,
         h1: {
-            fontFamily: `'Roboto', sans-serif`,
+            fontFamily: `'EB Garamond', serif`,
             fontWeight: 500,
             textAlign: 'center',
             lineHeight: '40px',
@@ -32,13 +32,13 @@ const theme = createMuiTheme({
             }
         },
         h2: {
-            fontFamily: `'Roboto', sans-serif`,
+            fontFamily: `'EB Garamond', serif`,
             fontWeight: 400,
             fontSize: "2rem",
             // color: '#001639'
         },
         h3: {
-            fontFamily: `'Roboto', sans-serif`,
+            fontFamily: `'EB Garamond', serif`,
             fontWeight: 400,
             fontSize: "1.5rem",
 

@@ -15,10 +15,10 @@
 .navbar .navlinks a{
     color: #001639;
     text-decoration: none;
-    margin: auto 10px;
-    padding: 5px 4px;
+    margin: auto 7px;
+    padding: 2px 1px;
     font-weight: 600;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 
 .navbar .navlinks a:hover{

@@ -139,6 +139,7 @@ p{
   #about #about-content{
     background-color: #ffffff;
     padding-top: 90px;
+    padding-bottom: 0;
   }
 
   #about-content .jess-image-div{

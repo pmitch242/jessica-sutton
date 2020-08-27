@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { NavLink, Link } from 'react-router-dom';
-import { Hidden, IconButton, Drawer, ListItem, List, ListItemText, makeStyles, Divider, Collapse, Box } from '@material-ui/core';
+import { Hidden, IconButton, Drawer, ListItem, List, ListItemText, makeStyles, Divider, Collapse, Box, Container } from '@material-ui/core';
 
 import MenuIcon from '@material-ui/icons/Menu';
 import CloseIcon from '@material-ui/icons/Close';
@@ -20,6 +20,13 @@ const useStyles = makeStyles({
         height: '100%',
         color: '#e9e9e9',
         backgroundColor: '#001639',
+    },
+    container: {
+        display: 'flex',
+        justifyContent: 'inherit',
+        alignItems: 'center',
+        paddingLeft: '13px',
+        paddingRight: '30px',
     },
     menuHeader: {
         display: 'flex',
@@ -74,26 +81,28 @@ const Navbar = () => {
     return (
 
         <Box fontFamily='fontFamily' className={`navbar ${classes.root}`} >
-            <Link to='/' style={{ textDecoration: 'none', color: 'inherit', marginLeft: '13px', width: '25%', }}><Logo /></Link>
+            <Container className={classes.container}>
+                <Link to='/' style={{ textDecoration: 'none', color: 'inherit', width: '25%', }}><Logo /></Link>
 
-            <Hidden xsDown>
-                <div className='navlinks'>
-                    <NavLink exact to='/'>Home</NavLink>
-                    <NavLink exact to='/about'>About</NavLink>
-                    <NavLink exact to='/services'>Services</NavLink>
-                    <NavLink exact to='/contact'>Contact</NavLink>
-                </div>
-                <div className='nav-contact'>
-                    <span>jess.el.sutton@gmail.com<EmailIcon className={classes.contactIcon} /></span>
-                    <span>208-503-9381<PhoneIcon className={classes.contactIcon} /></span>
-                </div>
-            </Hidden>
+                <Hidden xsDown>
+                    <div className='navlinks'>
+                        <NavLink exact to='/'>Home</NavLink>
+                        <NavLink exact to='/about'>About</NavLink>
+                        <NavLink exact to='/services'>Services</NavLink>
+                        <NavLink exact to='/contact'>Contact</NavLink>
+                    </div>
+                    <div className='nav-contact'>
+                        <span>jess.el.sutton@gmail.com<EmailIcon className={classes.contactIcon} /></span>
+                        <span>208-503-9381<PhoneIcon className={classes.contactIcon} /></span>
+                    </div>
+                </Hidden>
 
-            <Hidden smUp>
-                <IconButton onClick={toggleDrawer} className={classes.menuButton}>
-                    <MenuIcon className={classes.toggleButton} />
-                </IconButton>
-            </Hidden>
+                <Hidden smUp>
+                    <IconButton onClick={toggleDrawer} className={classes.menuButton}>
+                        <MenuIcon className={classes.toggleButton} />
+                    </IconButton>
+                </Hidden>
+            </Container>
 
             <Drawer
                 open={open}
@@ -109,7 +118,7 @@ const Navbar = () => {
                     <Divider />
                     <List className={classes.list}>
                         <ListItem button component={NavLink} to='/' onClick={toggleDrawer} className={classes.drawerNav}>
-                            <ListItemText primary='Home'/>
+                            <ListItemText primary='Home' />
                         </ListItem>
                         <ListItem button component={NavLink} to='/about' onClick={toggleDrawer}>
                             <ListItemText primary='About' />

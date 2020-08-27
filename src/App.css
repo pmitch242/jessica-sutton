@@ -9,7 +9,7 @@
   text-transform: capitalize;
   margin: 10px auto;
   text-align: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'EB Garamond', serif;
   font-weight: 700;
   line-height: 45px;
   margin-bottom: 12px;
@@ -18,11 +18,10 @@
 .h2{
   margin: 0;
   text-transform: capitalize;
-  font-family: 'Roboto', sans-serif;
-}
+  font-family: 'EB Garamond', serif;}
 
 p{
-  font-family: 'Lato', san-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .no-ul{
@@ -48,6 +47,11 @@ p{
 }
 
 @media only screen and (min-width: 600px) {
+  /* Navbar */
+  .navbar{
+    padding: 10px 0px;
+  }
+
   /* Headrer */
   .header-container {
     background-position-y: bottom;

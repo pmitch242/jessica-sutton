@@ -47,7 +47,7 @@ const theme = createMuiTheme({
             fontWeight: 400,
             fontSize: '1rem',
             letterSpacing: '2px',
-            lineHeight: '19px'
+            lineHeight: '28px'
         },
     }
 });

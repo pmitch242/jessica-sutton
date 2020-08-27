@@ -36,14 +36,22 @@
   letter-spacing: 2px;
 }
 
+.h4{
+  margin: 0;
+  text-transform: capitalize;
+  font-size: 33px;
+  line-height: 40px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
 .h6{
   margin: 0;
   text-transform: capitalize;
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 1px;
-  color: #939393;
-  margin: 5px 0 15px;
+  color: #7d7d7d;
 }
 
 p{
@@ -81,6 +89,7 @@ p{
   /* Header Component */
   .header-container {
     background-position-y: bottom;
+    margin-top: 60px;
 }
 
   .header {
@@ -98,7 +107,7 @@ p{
   }
 
   .intro-background{
-    background: linear-gradient(90deg, rgba(0,22,57,100%) 8%, rgba(0,22,57, 40%) 78%);
+    background: linear-gradient(90deg, rgba(0,22,57,100%) 15%, rgba(0,22,57, 40%) 78%);
   }
 
   .intro-title{
@@ -127,8 +136,26 @@ p{
   }
 
   /* About */
+  #about #about-content{
+    background-color: #ffffff;
+    padding-top: 90px;
+  }
+
+  #about-content .jess-image-div{
+    top: -12px;
+  }
+
   #about-content .jess-image-div h1 {
     font-weight: 400;
   }
+
+  #about-content .jess-image-div #title{
+    margin-bottom: -20px;
+  }
+
+  #about-content .about-p-div{
+    margin-top: -0;
+  }
+
 }
 

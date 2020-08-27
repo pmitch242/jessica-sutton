@@ -1,5 +1,5 @@
 import React from 'react';
-import { makeStyles, Button, Container, Paper } from '@material-ui/core';
+import { makeStyles, Button, Container, Paper, Grid } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 
 const useStyle = makeStyles({
@@ -20,32 +20,34 @@ const Service = ({ servicesList }) => {
     const services = servicesList.map(service =>
         <div id={`service-section`}>
             <Container>
-                <h1 className={`h1 ${service.name + '-service-h1'}`}>{service.name}</h1>
-                <p>{service.paragraph}</p>
-                
+                <Grid container spacing={0}>
+                    <Grid item xs={12} sm={7}>
+                        <div className={`service-image-div ${service.name + '-image'}`} />
+                    </Grid>
+                    <Grid itemxs={12} sm={5}>
+                        <Paper>
+                            <Container>
+                                <div className="card-details">
+                                    <p>{service.paragraph}</p>
 
-                <Paper >
-                <div className={`service-image-div ${service.name + '-image'}`} />
-
-                    <Container>
-                        <div className="card-details">
-                            <ul className='service-card-list'>
-                                {service.list.map(item =>
-                                    <li><span>{item}</span></li>
-                                )}
-                            </ul>
-                            <Link to='/contact' className='no-a'><Button variant="contained" color='secondary' className={classes.button}>Request Consultation</Button></Link>
-                        </div>
-
-                    </Container>
-                </Paper>
+                                    <ul className='service-card-list'>
+                                        {service.list.map(item =>
+                                            <li key={item}><span>{item}</span></li>
+                                        )}
+                                    </ul>
+                                    <Link to='/contact' className='no-a'><Button variant="contained" color='secondary' className={classes.button}>Request Consultation</Button></Link>
+                                </div>
+                            </Container>
+                        </Paper>
+                    </Grid>
+                </Grid>
             </Container>
         </div>
     )
 
     return (
-    <div>{services}</div>
-        
+        <div>{services}</div>
+
     )
 }
 

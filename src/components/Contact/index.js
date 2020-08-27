@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { makeStyles } from '@material-ui/core';
 
 import Header from '../Header';
@@ -14,6 +14,10 @@ const useStyle = makeStyles({
 
 const Contact = () => {
     const classes = useStyle();
+    
+    useEffect(() => {
+        window.scroll(0,0)
+    }, [])
 
     return (
         <div id='contact' className={classes.root}>

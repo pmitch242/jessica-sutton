@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { makeStyles } from '@material-ui/core';
 
 import Header from '../Header';
@@ -51,6 +51,10 @@ const servicesList = [
 
 const Services = () => {
     const classes = useStyle();
+
+    useEffect(() => {
+        window.scroll(0,0)
+    }, [])
 
     return (
         <div id='services' className={classes.root}>

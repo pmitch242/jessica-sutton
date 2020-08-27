@@ -44,9 +44,9 @@ const ServiceList = () => {
 
                 <Grid item sm={12} md={8}>
                     <div id='services-info-card'>
-                        <h1 className='h1'>Services</h1>
+                        <h3 className='h3'>How can we help?</h3>
                         <p>
-                            JE Sutton LLC provides tailored services that are responsive to each individual client's needs,
+                            JE Sutton LLC provides tailored services that are responsive to each individual client's need,
                             whether the client is an individual facing criminal charges,
                             a law firm seeking training, or a defender agency in need of case consultation
                         </p>

@@ -22,6 +22,14 @@ const Home = () => {
             {/* Sevices Section */}
             <Container id='services-section'>
                 <Title name='Our Services' />
+
+                {/* Services info section */}
+                <div id='services-info-section'>
+                    <h6 className='h6'>How can we help?</h6>
+                    <p className='p'>Providing tailored services that are responsive to each individual client's need.</p>
+                </div>
+
+                {/* Services Cards */}
                 <ServiceList />
             </Container>
 

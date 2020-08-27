@@ -64,6 +64,10 @@
     margin-bottom: 40px;
 }
 
+.consult-service-card h1{
+    letter-spacing: 3px;
+}
+
 .consult-service-card:hover,
 .direct-rep-service-card:hover,
 .training-service-card:hover,
@@ -83,7 +87,7 @@
 
 .training-service-card .service-card .h1,
 .mentor-service-card .service-card .h1{
-    letter-spacing: 4px;
+    letter-spacing: 2px;
 }
 
 .service-card span{
